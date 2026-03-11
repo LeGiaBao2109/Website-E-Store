@@ -1,0 +1,28 @@
+{
+    "name": "e-store",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "start": "node app.js",
+        "dev": "nodemon app.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/LeGiaBao2109/Website-E-Store.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "type": "commonjs",
+    "bugs": {
+        "url": "https://github.com/LeGiaBao2109/Website-E-Store/issues"
+    },
+    "homepage": "https://github.com/LeGiaBao2109/Website-E-Store#readme",
+    "dependencies": {
+        "dotenv": "^17.3.1",
+        "ejs": "^5.0.1",
+        "express": "^5.2.1",
+        "mongoose": "^9.3.0"
+    }
+}
