@@ -166,8 +166,7 @@
                 <!-- End Sidebar -->
 
                 <!-- Search -->
-                <form class="header__search d-flex align-items-center flex-grow-1 mx-2 mx-md-4" action="/search"
-                    method="GET">
+                <form class="header__search d-flex align-items-center flex-grow-1 mx-2 mx-md-4" action="/search" method="GET">
                     <input type="text" name="keyword" placeholder="Bạn cần tìm gì nào..." class="flex-grow-1">
                     <button type="submit" class="border-0 bg-transparent p-0">
                         <i class="fa-solid fa-magnifying-glass"></i>
@@ -182,9 +181,15 @@
                         LE VAN A
                     </div>
 
+                    <!-- Register -->
+                    <a href="/auth/login" class="header__account--login align-items-center">
+                        <i class="fa-regular fa-user"></i>
+                        <div>Đăng nhập</div>
+                    </a>
+
                     <!-- Icon User -->
-                    <a href="/auth/login"
-                        class="header__account--avt d-flex align-items-center justify-content-center text-decoration-none">
+                    <a href="/user-profile"
+                        class="header__account--avt active d-flex align-items-center justify-content-center text-decoration-none">
                         <i class="fa-regular fa-user"></i>
                     </a>
 
@@ -204,304 +209,224 @@
     </header>
     <!-- End Header -->
 
-    <main>
-        <!-- Banner -->
-        <section class="banner">
-            <div class="banner__container container">
-                <div class="banner-slider position-relative overflow-hidden">
-                    <div class="banner-track d-flex">
-                        <img src="../public/images/banner-1.png" class="banner-image img-fluid w-100">
-                        <img src="../public/images/banner-2.png" class="banner-image img-fluid w-100">
-                        <img src="../public/images/banner-3.png" class="banner-image img-fluid w-100">
-                    </div>
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner__container container">
+            <div class="banner-slider position-relative overflow-hidden">
+                <div class="banner-track d-flex">
+                    <img src="../public/images/banner-1.png" class="banner-image img-fluid w-100">
+                    <img src="../public/images/banner-2.png" class="banner-image img-fluid w-100">
+                    <img src="../public/images/banner-3.png" class="banner-image img-fluid w-100">
+                </div>
 
-                    <div class="slider-buttons">
-                        <button class="button button-left">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
+                <div class="slider-buttons">
+                    <button class="button button-left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
 
-                        <button class="button button-right">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                    </div>
+                    <button class="button button-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
 
-                    <div class="slider-pagination">
-                        <ul>
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
+                <div class="slider-pagination">
+                    <ul>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
                 </div>
             </div>
-        </section>
-        <!-- End Banner -->
+        </div>
+    </section>
+    <!-- End Banner -->
 
-        <!-- Product Promotion -->
-        <section class="product-promotion">
-            <div class="product-promotion__container container">
-                <div class="product-promotion__header">
-                    <div class="product-promotion__header-wrap">
+    <!-- Product-card -->
+    <section class="product-card">
+        <div class="product-card__container container">
+            <div class="product-card__header">
+                <div class="product-card__header-wrap">
 
-                        <div class="product-promotion__header-left">
-                            <h3 class="product-promotion__title-event">FLASH SALE</h3>
-                            <div class="product-promotion__title-time">01.01</div>
+                    <div class="product-card-promotion__header-left">
+                        <h3 class="product-card-promotion__title-event">FLASH SALE</h3>
+                        <div class="product-card-promotion__title-time">01.01</div>
+                    </div>
+
+                    <div class="product-card-promotion__header-right">
+                        <h3 class="product-card-promotion__title-expiry">HẾT HẠN SAU</h3>
+
+                        <div class="product-card-promotion__time-expiry">
+                            <div class="time">00</div>
+                            <div class="time">21</div>
+                            <div class="time">09</div>
                         </div>
-
-                        <div class="product-promotion__header-right">
-                            <h3 class="product-promotion__title-expiry">HẾT HẠN SAU</h3>
-
-                            <div class="product-promotion__time-expiry">
-                                <div class="time">00</div>
-                                <div class="time">21</div>
-                                <div class="time">09</div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-
-                <div class="product-slider">
-                    <div class="product-track">
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a class="product-promotion__item">
-                            <div class="product-promotion__item-image">
-                                <img src="../public/images/product-1.png">
-                            </div>
-                            <div class="product-promotion__item-content">
-                                <h4 class="product-promotion__item-title">
-                                    Iphone 17 Pro
-                                </h4>
-                                <div class="product-promotion__item-price">
-                                    <div class="product-promotion__item-price-discount">
-                                        45.990.000 vnđ
-                                    </div>
-                                    <div class="product-promotion__item-price-original">
-                                        49.000.000 vnđ
-                                    </div>
-                                </div>
-                                <div class="product-promotion__item-bottom">
-                                    <div class="product-promotion__item-quantity">
-                                        SL: 45
-                                    </div>
-                                    <button class="product-promotion__item-button">
-                                        <i class="fa-solid fa-cart-shopping"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </a>
                     </div>
 
-                    <div class="slider-buttons">
-                        <button class="button button-left">
-                            <i class="fa-solid fa-chevron-left"></i>
-                        </button>
-
-                        <button class="button button-right">
-                            <i class="fa-solid fa-chevron-right"></i>
-                        </button>
-                    </div>
-
-                    <div class="slider-pagination">
-                        <ul>
-                            <li class="active"></li>
-                            <li></li>
-                            <li></li>
-                        </ul>
-                    </div>
                 </div>
             </div>
-        </section>
-        <!-- End Product Promotion -->
-    </main>
+
+            <div class="product-card-slider">
+                <div class="product-card-track">
+                    <a class="product-card__item">
+                        <div class="product-card__item-image">
+                            <img src="../public/images/product-1.png">
+                        </div>
+                        <div class="product-card__item-content">
+                            <h4 class="product-card__item-title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price-discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price-original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item-bottom">
+                                <div class="product-card__item-quantity">
+                                    SL: 45
+                                </div>
+                                <button class="product-card__item-button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card__item">
+                        <div class="product-card__item-image">
+                            <img src="../public/images/product-1.png">
+                        </div>
+                        <div class="product-card__item-content">
+                            <h4 class="product-card__item-title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price-discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price-original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item-bottom">
+                                <div class="product-card__item-quantity">
+                                    SL: 45
+                                </div>
+                                <button class="product-card__item-button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card__item">
+                        <div class="product-card__item-image">
+                            <img src="../public/images/product-1.png">
+                        </div>
+                        <div class="product-card__item-content">
+                            <h4 class="product-card__item-title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price-discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price-original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item-bottom">
+                                <div class="product-card__item-quantity">
+                                    SL: 45
+                                </div>
+                                <button class="product-card__item-button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card__item">
+                        <div class="product-card__item-image">
+                            <img src="../public/images/product-1.png">
+                        </div>
+                        <div class="product-card__item-content">
+                            <h4 class="product-card__item-title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price-discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price-original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item-bottom">
+                                <div class="product-card__item-quantity">
+                                    SL: 45
+                                </div>
+                                <button class="product-card__item-button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a class="product-card__item">
+                        <div class="product-card__item-image">
+                            <img src="../public/images/product-1.png">
+                        </div>
+                        <div class="product-card__item-content">
+                            <h4 class="product-card__item-title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price-discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price-original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item-bottom">
+                                <div class="product-card__item-quantity">
+                                    SL: 45
+                                </div>
+                                <button class="product-card__item-button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="slider-buttons">
+                    <button class="button button-left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button class="button button-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slider-pagination">
+                    <ul>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product-card -->
+
+    <!-- Recommend List -->
+    <!-- End Recommend List -->
 
     <!-- Footer -->
     <footer class="footer">
