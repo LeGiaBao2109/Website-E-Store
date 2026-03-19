@@ -8,6 +8,7 @@
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="../public/css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -89,84 +90,15 @@
                         </ul>
 
                         <!-- Filter Content -->
-                        <div class="sidebar__content">
-                            <div class="filter-section">
-                                <h4>Hãng điện thoại</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn active">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="filter-section">
-                                <h4>Hãng tablet</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn active">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="filter-section">
-                                <h4>Mức giá</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">Dưới 2 triệu</button>
-                                    <button class="filter-btn">2-4 triệu</button>
-                                    <button class="filter-btn">4-7 triệu</button>
-                                    <button class="filter-btn">7-13 triệu</button>
-                                    <button class="filter-btn">Trên 13 triệu</button>
-                                </div>
-                            </div>
-
-                            <div class="filter-section">
-                                <h4>Máy hot</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">Iphone 17 Pro Max</button>
-                                    <button class="filter-btn">Iphone 16</button>
-                                    <button class="filter-btn">Ipad mini 7</button>
-                                </div>
-                            </div>
+                        <div class="sidebar__content" id="sidebarContent">
                         </div>
                     </div>
                 </div>
                 <!-- End Sidebar -->
 
                 <!-- Search -->
-                <form class="header__search d-flex align-items-center flex-grow-1 mx-2 mx-md-4" action="/search" method="GET">
+                <form class="header__search d-flex align-items-center flex-grow-1 mx-2 mx-md-4" action="/search"
+                    method="GET">
                     <input type="text" name="keyword" placeholder="Bạn cần tìm gì nào..." class="flex-grow-1">
                     <button type="submit" class="border-0 bg-transparent p-0">
                         <i class="fa-solid fa-magnifying-glass"></i>

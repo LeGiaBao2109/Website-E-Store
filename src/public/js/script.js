@@ -1,117 +1,264 @@
-// // Sidebar
-// const menuBtn = document.querySelector(".header__menu");
-// const overlay = document.querySelector(".sidebar-overlay");
-// const sidebarForm = document.querySelector(".sidebar-form");
+const menuBtn = document.querySelector(".header__menu");
+const overlay = document.querySelector(".sidebar-overlay");
+const sidebarForm = document.querySelector(".sidebar-form");
 
-// if (menuBtn && overlay && sidebarForm) {
-//     menuBtn.onclick = () => {
-//         overlay.classList.add("active");
-//         sidebarForm.classList.add("active");
-//     }
-//     overlay.onclick = () => {
-//         overlay.classList.remove("active");
-//         sidebarForm.classList.remove("active");
-//     }
-// }
+if (menuBtn && overlay && sidebarForm) {
+    menuBtn.addEventListener("click", () => {
+        overlay.classList.add("active");
+        sidebarForm.classList.add("active");
+    });
 
-// // Banner
-// const bannerTrack = document.querySelector(".banner-track");
-// const bannerSlides = document.querySelectorAll(".banner-image");
-// const bannerNext = document.querySelector(".banner .button-right");
-// const bannerPrev = document.querySelector(".banner .button-left");
-// const bannerDots = document.querySelectorAll(".slider-pagination li");
+    overlay.addEventListener("click", () => {
+        overlay.classList.remove("active");
+        sidebarForm.classList.remove("active");
+    });
+}
 
-// let bannerIndex = 0;
+const categories = document.querySelectorAll(".category-item");
+const content = document.getElementById("sidebarContent");
+const data = {
+    phones: `
+        <div class="filter-section" data-category="phones">
+                                <h4>Hãng điện thoại</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
 
-// function updateBanner() {
-//     if (!bannerTrack) return;
-//     bannerTrack.style.transform = `translateX(-${bannerIndex * 100}%)`;
-//     bannerDots.forEach(dot => dot.classList.remove("active"));
-//     if (bannerDots[bannerIndex]) {
-//         bannerDots[bannerIndex].classList.add("active");
-//     }
-// }
+                            <div class="filter-section">
+                                <h4>Hãng tablet</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
 
-// if (bannerNext) {
-//     bannerNext.onclick = () => {
-//         bannerIndex++;
-//         if (bannerIndex >= bannerSlides.length) {
-//             bannerIndex = 0;
-//         }
-//         updateBanner();
-//     }
-// }
+                            <div class="filter-section">
+                                <h4>Mức giá</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">Dưới 2 triệu</button>
+                                    <button class="filter-btn">2-4 triệu</button>
+                                    <button class="filter-btn">4-7 triệu</button>
+                                    <button class="filter-btn">7-13 triệu</button>
+                                    <button class="filter-btn">Trên 13 triệu</button>
+                                </div>
+                            </div>
 
-// if (bannerPrev) {
-//     bannerPrev.onclick = () => {
-//         bannerIndex--;
-//         if (bannerIndex < 0) {
-//             bannerIndex = bannerSlides.length - 1;
-//         }
-//         updateBanner();
-//     }
-// }
+                            <div class="filter-section">
+                                <h4>Máy hot</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">Iphone 17 Pro Max</button>
+                                    <button class="filter-btn">Iphone 16</button>
+                                    <button class="filter-btn">Ipad mini 7</button>
+                                </div>
+                            </div>
+    `,
+    laptop: `
+       <div class="filter-section" data-category="phones">
+                                <h4>Hãng điện thoại</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn active">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
 
-// bannerDots.forEach((dot, i) => {
-//     dot.addEventListener("click", () => {
-//         bannerIndex = i;
-//         updateBanner();
-//     });
-// });
+                            <div class="filter-section">
+                                <h4>Hãng tablet</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn active">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
 
-// if (bannerSlides.length > 0) {
-//     setInterval(() => {
-//         bannerIndex++;
-//         if (bannerIndex >= bannerSlides.length) {
-//             bannerIndex = 0;
-//         }
-//         updateBanner();
-//     }, 5000);
-// }
+                            <div class="filter-section">
+                                <h4>Mức giá</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">Dưới 2 triệu</button>
+                                    <button class="filter-btn">2-4 triệu</button>
+                                    <button class="filter-btn">4-7 triệu</button>
+                                    <button class="filter-btn">7-13 triệu</button>
+                                    <button class="filter-btn">Trên 13 triệu</button>
+                                </div>
+                            </div>
 
-// // Product Slider
-// const productTrack = document.querySelector(".product-track");
-// const productItems = document.querySelectorAll(".product-promotion__item");
-// const productNext = document.querySelector(".product-promotion .button-right");
-// const productPrev = document.querySelector(".product-promotion .button-left");
-// const productSlides = document.querySelectorAll(".product-promotion__item");
+                            <div class="filter-section">
+                                <h4>Máy hot</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">Iphone 17 Pro Max</button>
+                                    <button class="filter-btn">Iphone 16</button>
+                                    <button class="filter-btn">Ipad mini 7</button>
+                                </div>
+                            </div>
+    `,
+    tv: `
+        <div class="filter-section" data-category="phones">
+                                <h4>Hãng điện thoại</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn active">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                    <button class="filter-btn">
+                                        <img src="../public/images/brand-apple.svg" alt="">
+                                    </button>
+                                </div>
+                            </div>
 
-// let productIndex = 0;
+                            <div class="filter-section">
+                                <h4>Mức giá</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">Dưới 2 triệu</button>
+                                    <button class="filter-btn">2-4 triệu</button>
+                                    <button class="filter-btn">4-7 triệu</button>
+                                    <button class="filter-btn">7-13 triệu</button>
+                                    <button class="filter-btn">Trên 13 triệu</button>
+                                </div>
+                            </div>
 
-// function updateProductSlider(){
-//     if (!productTrack || productItems.length === 0) return;
-//     const itemWidth = productItems[0].offsetWidth + 20;
-//     productTrack.style.transform =
-//         `translateX(-${productIndex * itemWidth}px)`;
-// }
+                            <div class="filter-section">
+                                <h4>Máy hot</h4>
+                                <div class="filter-buttons">
+                                    <button class="filter-btn">Iphone 17 Pro Max</button>
+                                    <button class="filter-btn">Iphone 16</button>
+                                    <button class="filter-btn">Ipad mini 7</button>
+                                </div>
+                            </div>
+    `
+};
 
-// productNext.onclick = () => {
-//     const visibleItems = Math.floor(productTrack.offsetWidth / productItems[0].offsetWidth);
-//     const maxSlide = productItems.length - visibleItems;
+categories.forEach(item => {
+    item.addEventListener("mouseenter", () => {
+        if (window.innerWidth > 992) {
+            const category = item.dataset.category;
 
-//     productIndex++;
-//     if(productIndex > maxSlide){
-//         productIndex = 0;
-//     }
-//     updateProductSlider();
-// }
+            categories.forEach(i => i.classList.remove("active"));
+            item.classList.add("active");
 
-// productPrev.onclick = () => {
-//     const visibleItems = Math.floor(productTrack.offsetWidth / productItems[0].offsetWidth);
-//     const maxSlide = productItems.length - visibleItems;
-//     productIndex--;
-//     if(productIndex < 0){
-//         productIndex = maxSlide;
-//     }
-//     updateProductSlider();
-// }
+            content.innerHTML = data[category] || "";
+            content.classList.add("active");
+        }
+    });
+});
 
-// if (productSlides.length > 0) {
-//     setInterval(() => {
-//         productIndex++;
-//         if (productIndex >= productSlides.length - 4) {
-//             productIndex = 0;
-//         }
-//         updateProductSlider();
-//     }, 6000);
-// }
+const sidebar = document.querySelector(".sidebar");
+if (sidebar) {
+    sidebar.addEventListener("mouseleave", () => {
+        if (window.innerWidth > 992) {
+            content.classList.remove("active");
+        }
+    });
+}
+
+categories.forEach(item => {
+    item.addEventListener("click", () => {
+        if (window.innerWidth <= 992) {
+            const category = item.dataset.category;
+
+            content.innerHTML = `
+                <div class="sidebar-back">
+                    <i class="fa-solid fa-arrow-left"></i> Quay lại
+                </div>
+                ${data[category] || ""}
+            `;
+
+            content.classList.add("active");
+        }
+    });
+});
+
+document.addEventListener("click", (e) => {
+    if (e.target.closest(".sidebar-back")) {
+        content.classList.remove("active");
+    }
+});
