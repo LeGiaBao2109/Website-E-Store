@@ -1281,6 +1281,10 @@ img {
         width: 100%;
     }
 
+    .product-card__header-left--title {
+        font-size: 20px;
+    }
+
     .product-card__header-right {
         width: 100%;
     }
@@ -1588,7 +1592,6 @@ img {
         font-size: 10px;
     }
 
-
     .news-card .slider-buttons .button {
         width: 40px;
         height: 70px;
@@ -1601,11 +1604,23 @@ img {
     .news-card .button-right {
         right: -5px;
     }
+
+    .news-card__header--title {
+        font-size: 20px;
+    }
+
+    .news-card__button--more {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 480px) {
     .news-card__item {
         min-width: calc(100%);
+    }
+
+    .news-card__button--more {
+        font-size: 16px;
     }
 }
 
