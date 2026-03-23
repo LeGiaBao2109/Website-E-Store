@@ -14,38 +14,38 @@ if (menuBtn && overlay && sidebarForm) {
     });
 }
 
-const categories = document.querySelectorAll(".category-item");
+const categories = document.querySelectorAll(".sidebar__item");
 const content = document.getElementById("sidebarContent");
 const data = {
     phones: `
         <div class="filter-section" data-category="phones">
                                 <h4>Hãng điện thoại</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
@@ -54,16 +54,16 @@ const data = {
                             <div class="filter-section">
                                 <h4>Hãng tablet</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
@@ -72,20 +72,20 @@ const data = {
                             <div class="filter-section">
                                 <h4>Mức giá</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">Dưới 2 triệu</button>
-                                    <button class="filter-btn">2-4 triệu</button>
-                                    <button class="filter-btn">4-7 triệu</button>
-                                    <button class="filter-btn">7-13 triệu</button>
-                                    <button class="filter-btn">Trên 13 triệu</button>
+                                    <button class="filter-button">Dưới 2 triệu</button>
+                                    <button class="filter-button">2-4 triệu</button>
+                                    <button class="filter-button">4-7 triệu</button>
+                                    <button class="filter-button">7-13 triệu</button>
+                                    <button class="filter-button">Trên 13 triệu</button>
                                 </div>
                             </div>
 
                             <div class="filter-section">
                                 <h4>Máy hot</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">Iphone 17 Pro Max</button>
-                                    <button class="filter-btn">Iphone 16</button>
-                                    <button class="filter-btn">Ipad mini 7</button>
+                                    <button class="filter-button">Iphone 17 Pro Max</button>
+                                    <button class="filter-button">Iphone 16</button>
+                                    <button class="filter-button">Ipad mini 7</button>
                                 </div>
                             </div>
     `,
@@ -93,31 +93,31 @@ const data = {
        <div class="filter-section" data-category="phones">
                                 <h4>Hãng điện thoại</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn active">
+                                    <button class="filter-button active">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
@@ -126,16 +126,16 @@ const data = {
                             <div class="filter-section">
                                 <h4>Hãng tablet</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn active">
+                                    <button class="filter-button active">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
@@ -144,20 +144,20 @@ const data = {
                             <div class="filter-section">
                                 <h4>Mức giá</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">Dưới 2 triệu</button>
-                                    <button class="filter-btn">2-4 triệu</button>
-                                    <button class="filter-btn">4-7 triệu</button>
-                                    <button class="filter-btn">7-13 triệu</button>
-                                    <button class="filter-btn">Trên 13 triệu</button>
+                                    <button class="filter-button">Dưới 2 triệu</button>
+                                    <button class="filter-button">2-4 triệu</button>
+                                    <button class="filter-button">4-7 triệu</button>
+                                    <button class="filter-button">7-13 triệu</button>
+                                    <button class="filter-button">Trên 13 triệu</button>
                                 </div>
                             </div>
 
                             <div class="filter-section">
                                 <h4>Máy hot</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">Iphone 17 Pro Max</button>
-                                    <button class="filter-btn">Iphone 16</button>
-                                    <button class="filter-btn">Ipad mini 7</button>
+                                    <button class="filter-button">Iphone 17 Pro Max</button>
+                                    <button class="filter-button">Iphone 16</button>
+                                    <button class="filter-button">Ipad mini 7</button>
                                 </div>
                             </div>
     `,
@@ -165,31 +165,31 @@ const data = {
         <div class="filter-section" data-category="phones">
                                 <h4>Hãng điện thoại</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn active">
+                                    <button class="filter-button active">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
-                                    <button class="filter-btn">
+                                    <button class="filter-button">
                                         <img src="../public/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
@@ -198,20 +198,20 @@ const data = {
                             <div class="filter-section">
                                 <h4>Mức giá</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">Dưới 2 triệu</button>
-                                    <button class="filter-btn">2-4 triệu</button>
-                                    <button class="filter-btn">4-7 triệu</button>
-                                    <button class="filter-btn">7-13 triệu</button>
-                                    <button class="filter-btn">Trên 13 triệu</button>
+                                    <button class="filter-button">Dưới 2 triệu</button>
+                                    <button class="filter-button">2-4 triệu</button>
+                                    <button class="filter-button">4-7 triệu</button>
+                                    <button class="filter-button">7-13 triệu</button>
+                                    <button class="filter-button">Trên 13 triệu</button>
                                 </div>
                             </div>
 
                             <div class="filter-section">
                                 <h4>Máy hot</h4>
                                 <div class="filter-buttons">
-                                    <button class="filter-btn">Iphone 17 Pro Max</button>
-                                    <button class="filter-btn">Iphone 16</button>
-                                    <button class="filter-btn">Ipad mini 7</button>
+                                    <button class="filter-button">Iphone 17 Pro Max</button>
+                                    <button class="filter-button">Iphone 16</button>
+                                    <button class="filter-button">Ipad mini 7</button>
                                 </div>
                             </div>
     `
@@ -246,7 +246,7 @@ categories.forEach(item => {
             const category = item.dataset.category;
 
             content.innerHTML = `
-                <div class="sidebar-back">
+                <div class="sidebar__back">
                     <i class="fa-solid fa-arrow-left"></i> Quay lại
                 </div>
                 ${data[category] || ""}
@@ -257,8 +257,9 @@ categories.forEach(item => {
     });
 });
 
+// nút back mobile
 document.addEventListener("click", (e) => {
-    if (e.target.closest(".sidebar-back")) {
+    if (e.target.closest(".sidebar__back")) {
         content.classList.remove("active");
     }
 });
