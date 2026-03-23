@@ -22,31 +22,31 @@ const data = {
                                 <h4>Hãng điện thoại</h4>
                                 <div class="filter-buttons">
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -55,16 +55,16 @@ const data = {
                                 <h4>Hãng tablet</h4>
                                 <div class="filter-buttons">
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -94,31 +94,31 @@ const data = {
                                 <h4>Hãng điện thoại</h4>
                                 <div class="filter-buttons">
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button active">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -127,16 +127,16 @@ const data = {
                                 <h4>Hãng tablet</h4>
                                 <div class="filter-buttons">
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button active">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
                             </div>
@@ -166,31 +166,31 @@ const data = {
                                 <h4>Hãng điện thoại</h4>
                                 <div class="filter-buttons">
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button active">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                     <button class="filter-button">
-                                        <img src="../public/images/brand-apple.svg" alt="">
+                                        <img src="/images/brand-apple.svg" alt="">
                                     </button>
                                 </div>
                             </div>

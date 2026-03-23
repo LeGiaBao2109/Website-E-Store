@@ -1,5 +1,6 @@
 const path = require('path');
 
 module.exports.home = (req, res) => {
-    res.sendFile(path.join(__dirname, '../../views/client/pages/home.html'));
+    const fileChuan = path.resolve(__dirname, '../../views/index.html');
+    res.sendFile(fileChuan);
 };
