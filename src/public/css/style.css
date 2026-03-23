@@ -798,6 +798,11 @@ img {
     border-radius: 12px;
 }
 
+.banner__image img {
+    display: flex;
+    align-items: center;
+}
+
 /* Responsive */
 @media (max-width: 992px) {
     .slider__buttons button {
@@ -1129,7 +1134,7 @@ img {
 }
 
 .product-card-promotion__header--left {
-    width: 30%;
+    width: 35%;
     gap: 10px;
     background-color: #F3C374;
     padding: 10px 20px;
@@ -1146,6 +1151,9 @@ img {
 
 .product-card-promotion__header--right {
     gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .product-card-promotion__title--expiry {
@@ -1186,32 +1194,30 @@ img {
 
 /* Responsive */
 @media (max-width:1200px) {
-
-    .product-card--promotion__title--event,
-    .product-card--promotion__title--time,
-    .product-card--promotion__title--expiry,
-    .product-card--promotion__time--expiry .time {
+    .product-card-promotion__title--event,
+    .product-card-promotion__title--time,
+    .product-card-promotion__title--expiry,
+    .product-card-promotion__time--expiry .time {
         font-size: 22px;
     }
 }
 
 @media (max-width:992px) {
-    .product-card--promotion__header-left {
+    .product-card-promotion__header--left {
         width: 100%;
     }
 
-    .product-card--promotion__header-right {
+    .product-card-promotion__header--right {
         width: 100%;
         justify-content: space-between;
     }
 }
 
 @media (max-width:768px) {
-
-    .product-card--promotion__title-event,
-    .product-card--promotion__title-time,
-    .product-card--promotion__title-expiry,
-    .product-card--promotion__time-expiry .time {
+    .product-card-promotion__title--event,
+    .product-card-promotion__title--time,
+    .product-card-promotion__title--expiry,
+    .product-card-promotion__time--expiry .time {
         font-size: 18px;
     }
 }

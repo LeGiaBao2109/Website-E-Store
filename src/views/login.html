@@ -12,7 +12,7 @@
 
 <body>
     <!-- Header -->
-    <header class="header py-3 sticky-top">
+    <header class="header py-3 sticky-top position-relative">
         <div class="container">
             <div class="header__wrap d-flex align-items-center justify-content-between">
 
@@ -24,63 +24,63 @@
                 </div>
 
                 <!-- Menu -->
-                <nav class="header__menu d-flex align-items-center ms-2">
+                <nav class="header__menu d-flex align-items-center ms-2 flex-shrink-0">
                     <i class="fa-solid fa-bars"></i>
                     <span class="d-none d-md-block ms-2">DANH MỤC</span>
                 </nav>
 
                 <!-- Sidebar Overlay -->
-                <div class="sidebar-overlay"></div>
+                <div class="sidebar-overlay position-fixed"></div>
 
-                <div class="sidebar-form">
+                <div class="sidebar-form position-fixed w-100">
                     <!-- Sidebar Popup -->
-                    <div class="sidebar">
-                        <!-- Categories List -->
-                        <ul class="sidebar__container">
-                            <li class="category-item active" data-category="phones">
-                                <div class="category-content">
+                    <div class="sidebar d-flex align-items-start bg-transparent">
+                        <!-- Sidebar List -->
+                        <ul class="sidebar__container list-unstyled m-0 p-0">
+                            <li class="sidebar__item active" data-category="phones">
+                                <div class="sidebar__item--content">
                                     <i class="fa-solid fa-mobile-screen-button"></i>
                                     <span>Điện thoại & Tablet</span>
                                 </div>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </li>
-                            <li class="category-item" data-category="laptop">
-                                <div class="category-content">
+                            <li class="sidebar__item" data-category="laptop">
+                                <div class="sidebar__item--content">
                                     <i class="fa-solid fa-laptop"></i>
                                     <span>Laptop & Màn Hình</span>
                                 </div>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </li>
-                            <li class="category-item" data-category="tv">
-                                <div class="category-content">
+                            <li class="sidebar__item" data-category="tv">
+                                <div class="sidebar__item--content">
                                     <i class="fa-solid fa-tv"></i>
                                     <span>TV</span>
                                 </div>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </li>
-                            <li class="category-item" data-category="audio">
-                                <div class="category-content">
+                            <li class="sidebar__item" data-category="audio">
+                                <div class="sidebar__item--content">
                                     <i class="fa-solid fa-headphones"></i>
                                     <span>Âm Thanh</span>
                                 </div>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </li>
-                            <li class="category-item" data-category="accessory">
-                                <div class="category-content">
+                            <li class="sidebar__item" data-category="accessory">
+                                <div class="sidebar__item--content">
                                     <i class="fa-solid fa-keyboard"></i>
                                     <span>Phụ Kiện</span>
                                 </div>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </li>
-                            <li class="category-item" data-category="discount">
-                                <div class="category-content">
+                            <li class="sidebar__item" data-category="discount">
+                                <div class="sidebar__item--content">
                                     <i class="fa-solid fa-tag"></i>
                                     <span>Khuyến Mãi</span>
                                 </div>
                                 <i class="fa-solid fa-chevron-right"></i>
                             </li>
-                            <li class="category-item" data-category="news">
-                                <div class="category-content">
+                            <li class="sidebar__item" data-category="news">
+                                <div class="sidebar__item--content">
                                     <i class="fa-solid fa-newspaper"></i>
                                     <span>Tin Tức</span>
                                 </div>
@@ -89,77 +89,7 @@
                         </ul>
 
                         <!-- Filter Content -->
-                        <div class="sidebar__content">
-                            <div class="filter-section">
-                                <h4>Hãng điện thoại</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn active">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="filter-section">
-                                <h4>Hãng tablet</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn active">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                    <button class="filter-btn">
-                                        <img src="../public/images/brand-apple.svg" alt="">
-                                    </button>
-                                </div>
-                            </div>
-
-                            <div class="filter-section">
-                                <h4>Mức giá</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">Dưới 2 triệu</button>
-                                    <button class="filter-btn">2-4 triệu</button>
-                                    <button class="filter-btn">4-7 triệu</button>
-                                    <button class="filter-btn">7-13 triệu</button>
-                                    <button class="filter-btn">Trên 13 triệu</button>
-                                </div>
-                            </div>
-
-                            <div class="filter-section">
-                                <h4>Máy hot</h4>
-                                <div class="filter-buttons">
-                                    <button class="filter-btn">Iphone 17 Pro Max</button>
-                                    <button class="filter-btn">Iphone 16</button>
-                                    <button class="filter-btn">Ipad mini 7</button>
-                                </div>
-                            </div>
+                        <div class="sidebar__content" id="sidebarContent">
                         </div>
                     </div>
                 </div>
@@ -168,31 +98,39 @@
                 <!-- Search -->
                 <form class="header__search d-flex align-items-center flex-grow-1 mx-2 mx-md-4" action="/search"
                     method="GET">
-                    <input type="text" name="keyword" placeholder="Bạn cần tìm gì nào..." class="flex-grow-1">
+                    <input type="text" name="keyword" placeholder="Bạn cần tìm gì nào..."
+                        class="flex-grow-1 border-0 outline-">
                     <button type="submit" class="border-0 bg-transparent p-0">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
                 </form>
 
                 <!-- Account & Cart -->
-                <div class="header__account d-flex align-items-center gap-2 gap-md-3">
+                <div class="header__account d-flex align-items-center gap-2 gap-md-3 flex-shrink-0">
 
                     <!-- Username -->
                     <div class="header__account--username d-none d-lg-block text-white">
                         LE VAN A
                     </div>
 
-                    <!-- Icon User -->
+                    <!-- Login -->
                     <a href="/auth/login"
-                        class="header__account--avt d-flex align-items-center justify-content-center text-decoration-none">
+                        class="header__account--login d-none align-items-center justify-content-center border-0 flex-shrink-0">
+                        <i class="fa-regular fa-user"></i>
+                        <div>Đăng nhập</div>
+                    </a>
+
+                    <!-- Icon User -->
+                    <a href="/user-profile"
+                        class="header__account--avt active d-flex align-items-center justify-content-center text-decoration-none flex-shrink-0">
                         <i class="fa-regular fa-user"></i>
                     </a>
 
                     <!-- Icon Cart -->
                     <a href="/cart"
-                        class="header__account--cart d-flex align-items-center justify-content-center text-decoration-none">
+                        class="header__account--cart d-flex align-items-center justify-content-center text-decoration-none flex-shrink-0 position-relative">
                         <div
-                            class="header__account--cart-quantity fw-bold d-flex align-items-center justify-content-center">
+                            class="header__account--cart-quantity fw-bold d-flex align-items-center justify-content-center position-absolute">
                             10
                         </div>
                         <i class="fa-solid fa-cart-shopping"></i>
@@ -214,15 +152,15 @@
             <!-- Subscribe Form -->
             <div class="footer__subscribe row mx-lg-5 d-flex align-items-center p-4">
                 <div class="col-12 col-lg-5 text-center text-lg-start mb-3 mb-lg-0">
-                    <h5 class="m-0 text-white">GÓP Ý TRỰC TIẾP SHOP TẠI ĐÂY NHÉ</h5>
+                    <h5 class="m-0 fw-bold">GÓP Ý TRỰC TIẾP SHOP TẠI ĐÂY NHÉ</h5>
                 </div>
 
                 <div class="col-12 col-lg-7">
-                    <div class="footer__form-wrapper p-2 d-flex align-items-center">
-                        <form class="footer__form-group d-flex bg-white p-1 w-100" action="">
+                    <div class="footer__form--wrap p-2 d-flex align-items-center">
+                        <form class="footer__form--group d-flex bg-white p-1 w-100" action="">
                             <input class="form-control border-0 bg-transparent shadow-none px-3" type="email"
                                 placeholder="Nhập email của bạn tại đây...">
-                            <button class="btn px-4 fw-bold" type="submit">
+                            <button class="btn px-4 fw-bold border-0" type="submit">
                                 Gửi
                             </button>
                         </form>
@@ -266,7 +204,6 @@
                         <a href="#"><i class="fa-brands fa-youtube"></i></a>
                     </div>
                 </div>
-
             </div>
 
             <div class="footer__bottom row border-top border-white border-opacity-25 py-4 align-items-center">
