@@ -20,6 +20,7 @@
     },
     "homepage": "https://github.com/LeGiaBao2109/Website-E-Store#readme",
     "dependencies": {
+        "bootstrap": "^5.3.8",
         "dotenv": "^17.3.1",
         "ejs": "^5.0.1",
         "express": "^5.2.1",
