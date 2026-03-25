@@ -17,9 +17,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'src/public')));
 
-app.use('/bootstrap', express.static(path.join(__dirname, 'node_modules/bootstrap/dist')));
-
-clientRoutes(app);
+app.use('/', clientRoutes);
 
 app.listen(port, () => {
     console.log(`Website đang chạy trên cổng ${port}`);
