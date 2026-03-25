@@ -1528,3 +1528,176 @@ img {
 }
 
 /* End News */
+
+
+/* Product Page Styles */
+
+/* Breadcrumb */
+.product-breadcrumb .breadcrumb-item + .breadcrumb-item::before {
+    content: "/";
+    color: #6c757d;
+}
+
+.product-breadcrumb a {
+    color: #333;
+    text-decoration: none;
+}
+
+/* Promo Banner */
+.promo-banner__img {
+    border-radius: 12px;
+    border: 1px solid #dee2e6;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    transition: transform 0.3s ease;
+}
+
+.promo-banner__link:hover .promo-banner__img {
+    transform: translateY(-2px);
+}
+
+/* Brand Filter */
+.brand-filter__title {
+    font-size: 1.5rem;
+    color: #000;
+}
+
+.brand-filter__grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand-filter__item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(20% - 16px);
+    min-width: 120px;
+    height: 45px;
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    transition: all 0.2s ease-in-out;
+    text-decoration: none;
+}
+
+.brand-filter__item:hover {
+    border-color: 2px 2px 5px white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.brand-filter__logo {
+    max-width: 100%;
+    max-height: 25px;
+    object-fit: contain;
+}
+
+/* Responsive cho Mobile */
+@media (max-width: 768px) {
+    .brand-filter__item {
+        width: calc(33.33% - 12px); 
+    }
+}
+
+@media (max-width: 480px) {
+    .brand-filter__item {
+        width: calc(50% - 12px); 
+    }
+}
+
+/* Filter start */
+/* Filter Bar Section */
+.filter-bar__title {
+    font-size: 1.5rem; 
+    color: #000;
+}
+
+.filter-bar__item {
+    display: inline-flex;
+    align-items: center;
+    padding: 8px 16px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px; 
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.filter-bar__item:hover {
+    border-color: #d1d1d1;
+    background-color: #f8f9fa;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.filter-bar__label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.filter-bar__item i {
+    font-size: 12px;
+    color: #666;
+}
+
+/* Modifier cho trạng thái đang được chọn (nếu cần) */
+.filter-bar__item--active {
+    border-color: #0d6efd;
+    background-color: #f0f7ff;
+}
+
+/* Responsive cho mobile */
+@media (max-width: 576px) {
+    .filter-bar__item {
+        padding: 6px 12px;
+    }
+    .filter-bar__label {
+        font-size: 13px;
+    }
+}
+/* Filter end */
+
+
+/* Button Xem Thêm */
+.btn-see-more {
+    background-color: #eeb063;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 6px rgba(238, 176, 99, 0.3);
+}
+
+.btn-see-more:hover {
+    background-color: #df9e4f;
+    box-shadow: 0 6px 10px rgba(238, 176, 99, 0.4);
+    transform: translateY(-2px);
+}
+
+/* Khối Feature & News */
+.feature-news__wrapper {
+    background-color: #f2f2f2;
+}
+
+.feature-news__content {
+    line-height: 1.6;
+}
+
+/* Tin tức Sidebar */
+.news-item {
+    background-color: #ffffff;
+    border-color: #e0e0e0 !important;
+}
+
+/* Hiệu ứng hover cho thẻ tin tức */
+.news-item:hover {
+    border-color: #4a90e2 !important;
+    background-color: #f8fbff;
+    box-shadow: 0 2px 8px rgba(74, 144, 226, 0.15);
+}
+
+
+.news-item__title h4 {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
