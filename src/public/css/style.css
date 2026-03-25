@@ -939,12 +939,12 @@ img {
     box-shadow: 1px 1px 4px 1px #9a9a9a;
 }
 
-.product-card__item-button--promotion {
+.product-card__item--button-promotion {
     background-color: #F3C374;
     color: #fff;
 }
 
-.product-card__item-button--promotion:hover {
+.product-card__item--button-promotion:hover {
     background-color: var(--color-secondary);
 }
 
