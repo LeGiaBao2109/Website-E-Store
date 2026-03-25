@@ -1,12 +1,9 @@
-const Product = require("../../models/product.model");
+const path = require('path');
 
-module.exports.index = async (req, res) => {
-    try {
-        const products = await Product.find({
-            status: "active"
-        });
-        res.json(products);
-    } catch (error) {
-        res.status(500).json({ message: error.message });
-    }
+module.exports.list = (req, res) => {
+    res.sendFile(path.join(__dirname, "../../views/product-list.html"));
+};
+
+module.exports.detail = (req, res) => {
+    res.sendFile(path.join(__dirname, "../../views/product-detail.html"));
 };
