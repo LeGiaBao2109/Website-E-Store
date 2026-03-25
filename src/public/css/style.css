@@ -1208,6 +1208,7 @@ img {
 
 /* Responsive */
 @media (max-width:1200px) {
+
     .product-card-promotion__title--event,
     .product-card-promotion__title--time,
     .product-card-promotion__title--expiry,
@@ -1228,6 +1229,7 @@ img {
 }
 
 @media (max-width:768px) {
+
     .product-card-promotion__title--event,
     .product-card-promotion__title--time,
     .product-card-promotion__title--expiry,
@@ -1542,3 +1544,128 @@ img {
 }
 
 /* End News */
+
+/* Breadcrumb */
+.c-breadcrumb .container {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.c-breadcrumb__list {
+    height: 40px;
+}
+
+.c-breadcrumb__list li {
+    font-size: 16px;
+}
+
+@media (max-width: 992px) {
+    .c-breadcrumb__list li {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .c-breadcrumb__list li {
+        font-size: 12px;
+    }
+}
+
+/* End Breadcrumb */
+
+/* Filter */
+.filter__title {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.filter__category {
+    gap: 10px;
+    padding: 0 30px;
+}
+
+.filter .filter__item {
+    background-color: #fff;
+    box-shadow: 1px 1px 4px 1px #9a9a9a;
+    border-radius: 12px;
+    padding: 10px 20px;
+    animation: fadeUp 0.5s ease forwards;
+    transition: all 0.3s ease;
+}
+
+.filter .filter__item a {
+    color: #000;
+}
+
+.filter .filter__item:hover {
+    transform: translateY(-8px) scale(1.0);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+    .filter__title {
+        margin-left: 10px;
+        font-size: 20px;
+    }
+
+    .filter .filter__item {
+        padding: 8px 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .filter__title {
+        font-size: 18px;
+    }
+}
+
+/* End Filter */
+
+/* Button More */
+.button-more a {
+    background-color: var(--color-secondary);
+    color: #fff;
+    animation: fadeUp 0.5s ease forwards;
+    transition: all 0.3s ease;
+    font-size: 18px;
+}
+
+.button-more a:hover {
+    background-color: #5979B7;
+    transform: translateY(-8px) scale(1.0);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+@media (max-width: 768px) {
+    .button-more a {
+        font-size: 14px;
+        width: 100%;
+    }
+}
+
+/* End Button More */
+
+/* Product Desc */
+.product-desc__wrap {
+    background-color: #f2f2f2;
+}
+
+.product-desc__content {
+    line-height: 1.6;
+}
+
+/* News Item */
+.news-item {
+    background-color: #fff;
+    border-color: #e0e0e0;
+    animation: fadeUp 0.5s ease forwards;
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    border-color: #5979B7;
+    background-color: #fff;
+    transform: translateY(-4px) scale(1.0);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
