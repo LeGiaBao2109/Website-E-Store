@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -166,9 +166,113 @@
     </header>
     <!-- End Header -->
 
-    <main>
-        <!-- Code ở đây nha -->
-    </main>
+    <!-- Breadcrumb -->
+    <nav class="c-breadcrumb" aria-label="breadcrumb">
+        <div class="c-breadcrumb__container container py-1">
+            <ol class="breadcrumb c-breadcrumb__list m-0 d-flex align-items-center">
+                <li class="breadcrumb-item c-breadcrumb__item">
+                    <a href="/" class="text-black">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li class="breadcrumb-item c-breadcrumb__item active text-black" aria-current="page">
+                    Khuyến mãi
+                </li>
+            </ol>
+        </div>
+    </nav>
+    <!-- End Breadcrumb -->
+
+    <!-- Banner -->
+    <section class="banner">
+        <div class="banner__container container">
+            <div class="banner__slider slider">
+                <div class="banner__wrap d-flex">
+                    <img src="/images/banner-1.png" class="banner__image img-fluid w-100">
+                    <img src="/images/banner-2.png" class="banner__image img-fluid w-100">
+                    <img src="/images/banner-3.png" class="banner__image img-fluid w-100">
+                </div>
+
+                <div class="slider__buttons">
+                    <button class="button button-left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button class="button button-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slider__pagination">
+                    <ul>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Banner -->
+
+    <!-- Category -->
+    <section class="category-promotion category">
+        <div class="category__container container">
+            <div class="category__wrap">
+                <div class="category__header">
+                    <h3 class="category__header--title-promotion fw-bold text-center">
+                        DANH SÁCH ƯU ĐÃI
+                    </h3>
+                </div>
+
+                <div class="category__main">
+                    <div class="category__main--wrap-promotion">
+                        <div class="category__item">
+                            <a href="#" class="category__item--image">
+                                <img src="/images/category-1.png" alt="Phone">
+                            </a>
+                        </div>
+                        <div class="category__item">
+                            <a href="#" class="category__item--image">
+                                <img src="/images/category-2.png" alt="Laptop">
+                            </a>
+                        </div>
+                        <div class="category__item">
+                            <div class="category__item--image">
+                                <img src="/images/category-3.png" alt="Recharge">
+                            </div>
+                        </div>
+                        <div class="category__item">
+                            <a href="" class="category__item--image">
+                                <img src="/images/category-4.png" alt="Items">
+                            </a>
+                        </div>
+                        <div class="category__item">
+                            <a href="" class="category__item--image">
+                                <img src="/images/category-5.png" alt="USB">
+                            </a>
+                        </div>
+                        <div class="category__item">
+                            <a href="" class="category__item--image">
+                                <img src="/images/category-6.png" alt="Music">
+                            </a>
+                        </div>
+                        <div class="category__item">
+                            <a href="" class="category__item--image">
+                                <img src="/images/category-7.png" alt="Watch">
+                            </a>
+                        </div>
+                        <div class="category__item">
+                            <a href="" class="category__item--image">
+                                <img src="/images/category-8.png" alt="Cable">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Category -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -251,7 +355,7 @@
     <!-- End Footer -->
 
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="../public/js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 

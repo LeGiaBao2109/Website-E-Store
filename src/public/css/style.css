@@ -1246,22 +1246,33 @@ img {
     margin: 30px 0;
 }
 
-.category__wrap {
-    display: inline-block;
-}
-
 .category__header {
     margin-bottom: 10px;
-    display: flex;
     gap: 20px;
-    align-items: center;
-    justify-content: flex-start;
 }
 
 .category__header--title {
     margin: 0;
     font-size: 24px;
     font-weight: 600;
+}
+
+/* Promotion */
+.category__header--title-promotion {
+    font-size: 36px;
+    color: var(--color-primary)
+}
+
+.category__main--wrap-promotion {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1000px;
+}
+/* End Promotion */
+
+.category__main {
+    display: flex;
+    align-items: center;
+    justify-items: center;
 }
 
 .category__button--more {
@@ -1282,13 +1293,17 @@ img {
     color: var(--color-primary);
 }
 
-.category__main--wrap {
+.category__main--wrap,
+.category__main--wrap-promotion {
     display: grid;
-    grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(2, auto);
     gap: 20px;
     padding: 10px;
-    justify-items: center;
+    margin: 0 auto;
+}
+
+.category__main--wrap {
+    grid-template-columns: repeat(6, 1fr);
 }
 
 .category__item {
@@ -1306,30 +1321,6 @@ img {
 .category__item:hover {
     transform: translateY(-8px) scale(1.03);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
-}
-
-.category__item:nth-child(1) {
-    animation-delay: 0.05s;
-}
-
-.category__item:nth-child(2) {
-    animation-delay: 0.1s;
-}
-
-.category__item:nth-child(3) {
-    animation-delay: 0.15s;
-}
-
-.category__item:nth-child(4) {
-    animation-delay: 0.2s;
-}
-
-.category__item:nth-child(5) {
-    animation-delay: 0.25s;
-}
-
-.category__item:nth-child(6) {
-    animation-delay: 0.3s;
 }
 
 @keyframes fadeUp {
@@ -1353,12 +1344,21 @@ img {
 }
 
 @media (max-width: 768px) {
+    .category__main--wrap-promotion,
     .category__main--wrap {
-        grid-template-columns: repeat(3, 1fr);
+        gap: 10px;
     }
 
     .category__header--title {
         font-size: 20px;
+    }
+
+    .category__header--title-promotion {
+        font-size: 32px;
+    }
+
+    .category__item {
+        border-radius: 12px;
     }
 
     .category__button--more {
@@ -1367,12 +1367,17 @@ img {
 }
 
 @media (max-width: 480px) {
-    .category__main--wrap {
-        grid-template-columns: repeat(2, 1fr);
+    .category__main--wrap,
+    .category__main--wrap-promotion {
+        max-width: 400px;
     }
 
     .category__header--title {
         font-size: 18px;
+    }
+
+    .category__header--title-promotion {
+        font-size: 28px;
     }
 
     .category__button--more {
