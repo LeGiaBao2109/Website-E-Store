@@ -4,4 +4,6 @@ const promotionController = require("../../controllers/client/promotion.controll
 
 router.get("/", promotionController.list);
 
+router.get("/detail", promotionController.detail);
+
 module.exports = router;
