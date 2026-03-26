@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -166,9 +166,142 @@
     </header>
     <!-- End Header -->
 
-    <main>
-        <!-- Code ở đây nha -->
-    </main>
+    <!-- Breadcrumb -->
+    <nav class="c-breadcrumb" aria-label="breadcrumb">
+        <div class="c-breadcrumb__container container py-1">
+            <ol class="breadcrumb c-breadcrumb__list m-0 d-flex align-items-center">
+                <li class="breadcrumb-item c-breadcrumb__item">
+                    <a href="/" class="text-black">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li class="breadcrumb-item c-breadcrumb__item">
+                    <a href="/products" class="text-black">
+                        Điện thoại
+                    </a>
+                </li>
+                <li class="breadcrumb-item c-breadcrumb__item">
+                    <a href="/products" class="text-black">
+                        Iphone 17 Series
+                    </a>
+                </li>
+                <li class="breadcrumb-item c-breadcrumb__item active text-black" aria-current="page">
+                    Iphone 17 Pro 512 GB
+                </li>
+            </ol>
+        </div>
+    </nav>
+    <!-- End Breadcrumb -->
+
+    <!-- Product Detail -->
+    <section class="product-detail mt-5">
+        <div class="product-detail__container container">
+            <div class="product-detail__wrap d-flex">
+                <div class="product-detail__left">
+                    <div class="product-detail__header">
+                        <h4 class="product-detail__name fw-bold">Iphone 17 Pro 512 Gb</h4>
+                    </div>
+
+                    <div class="product-detail__image-box mt-3">
+                        <ul
+                            class="product-detail__image-list--main d-flex overflow-hidden w-100 list-unstyled flex-nowrap">
+                            <div class="product-detail__image-item w-100">
+                                <img src="/images/product-1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="product-detail__image-item w-100">
+                                <img src="/images/product-1.png" alt="" class="img-fluid">
+                            </div>
+                            <div class="product-detail__image-item w-100">
+                                <img src="/images/product-1.png" alt="" class="img-fluid">
+                            </div>
+                        </ul>
+                        <ul class="product-detail__image-list d-flex overflow-hidden mt-2 list-unstyled flex-nowrap">
+                            <li class="product-detail__image-item">
+                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                            </li>
+                            <li class="product-detail__image-item">
+                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                            </li>
+                            <li class="product-detail__image-item">
+                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                            </li>
+                            <li class="product-detail__image-item">
+                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                            </li>
+                            <li class="product-detail__image-item">
+                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                            </li>
+                            <li class="product-detail__image-item">
+                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-detail__buttons d-flex align-items-center justify-content-between w-100 mt-3">
+                        <button class="product-detail__button-order m-0 border-0 fw-bold">ĐẶT NGAY</button>
+                        <button class="product-detail__button-add-cart m-0 border-0">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                        </button>
+                    </div>
+
+                    <div class="product-detail__specs">
+                        <div
+                            class="product-detail__specs--header d-flex align-items-center justify-content-between mt-3">
+                            <h4 class="product-detail__specs--title fw-bold">
+                                Thông số kĩ thuật
+                            </h4>
+                        </div>
+
+                        <div class="product-detail__specs---body card border-0 shadow-sm mt-3 w-100 overflow-hidden">
+                            <table class="table table-striped-columns m-0">
+                                <tbody>
+                                    <tr>
+                                        <td class="text-secondary ps-4 py-3">Kích thước màn hình</td>
+                                        <td class="text-secondary ps-4 py-3">6.9 inches</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-secondary ps-4 py-3">Công nghệ màn hình</td>
+                                        <td class="text-secondary ps-4 py-3">Super Retina XDR</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-secondary ps-4 py-3">Độ phân giải</td>
+                                        <td class="text-secondary ps-4 py-3">2822 x 1206 pixels</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-secondary ps-4 py-3">Tính năng màn hình</td>
+                                        <td class="text-secondary ps-4 py-3">
+                                            Màn hình Luôn Bật, ProMotion 120Hz, HDR, True Tone,
+                                            Dải màu rộng (P3), Haptic Touch, Tỷ lệ tương phản 2.000.000:1 (tiêu chuẩn)
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-secondary ps-4 py-3">Camera sau</td>
+                                        <td class="text-secondary ps-4 py-3">Chính: 48MP, Góc siêu rộng: 48MP, Tele: 48MP</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-secondary ps-4 py-3">Chipset</td>
+                                        <td class="text-secondary ps-4 py-3">A19 Pro</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-secondary ps-4 py-3">Hệ điều hành</td>
+                                        <td class="text-secondary ps-4 py-3">iOS 26</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-detail__right">
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product Detail -->
+
+
 
     <!-- Footer -->
     <footer class="footer">
@@ -251,7 +384,7 @@
     <!-- End Footer -->
 
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="../public/js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 
