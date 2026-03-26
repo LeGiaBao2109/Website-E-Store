@@ -1547,7 +1547,7 @@ img {
 /* End News */
 
 /* Breadcrumb */
-.c-breadcrumb .container {
+.c-breadcrumb{
     background-color: rgba(0, 0, 0, 0.1);
 }
 
