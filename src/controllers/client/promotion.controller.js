@@ -7,3 +7,7 @@ module.exports.list = (req, res) => {
 module.exports.detail = (req, res) => {
     res.sendFile(path.join(__dirname, "../../views/promotion-detail.html"));
 };
+
+module.exports.product = (req, res) => {
+    res.sendFile(path.join(__dirname, "../../views/promotion-product-list.html"));
+};

@@ -1701,6 +1701,7 @@ img {
 .product-desc__content {
     line-height: 1.6;
 }
+/* End Product Desc */
 
 /* News Item */
 .news-item {
@@ -1716,3 +1717,18 @@ img {
     transform: translateY(-4px) scale(1.0);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
+/* End News Item */
+
+/* Promotion Desc */
+.promotion-desc__wrap {
+    background-color: #f2f2f2;
+}
+
+.promotion-desc__main {
+    border-radius: 12px;
+}
+
+.promotion-desc__content {
+    line-height: 1.6;
+}
+/* End Promotion Desc */
