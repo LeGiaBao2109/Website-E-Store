@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang Chủ</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header py-3 sticky-top">
+        <div class="header__container container position-relative">
+            <div class="header__wrap d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <div class="header__logo flex-shrink-0">
+                    <a href="/" class="text-white fw-bold text-decoration-none fs-4 fs-md-2">
+                        E-STORE
+                    </a>
+                </div>
+
+                <!-- Menu -->
+                <nav class="header__menu d-flex align-items-center ms-2 flex-shrink-0">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="d-none d-md-block ms-2">DANH MỤC</span>
+                </nav>
+
+                <!-- Sidebar Overlay -->
+                <div class="sidebar-overlay position-fixed"></div>
+
+                <div class="sidebar-form position-fixed w-100">
+                    <!-- Sidebar Popup -->
+                    <div class="sidebar d-flex align-items-start bg-transparent">
+                        <!-- Sidebar List -->
+                        <ul class="sidebar__container list-unstyled m-0 p-0">
+                            <li class="sidebar__item active" data-category="phones">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>
+                                        <a href="/products">Điện thoại</a>,
+                                        <a href="/products">Tablet</a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="laptop">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-laptop"></i>
+                                    <span>
+                                        <a href="/products">Laptop</a>,
+                                        <a href="/products">Màn hình</a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="tv">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <span>
+                                        <a href="/products">TV</a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="audio">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-headphones"></i>
+                                    <span>
+                                        <a href="/products">
+                                            Âm Thanh
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="accessory">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-keyboard"></i>
+                                    <span>
+                                        <a href="/products">
+                                            Phụ Kiện
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="discount">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span>
+                                        <a href="/promotions">
+                                            Khuyến Mãi
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="news">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    <span>
+                                        <a href="/news">
+                                            Tin Tức
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
+
+                        <!-- Filter Content -->
+                        <div class="sidebar__content" id="sidebarContent">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Sidebar -->
+
+                <!-- Search -->
+                <form class="header__search d-flex align-items-center flex-grow-1 mx-2 mx-md-4" action="/search"
+                    method="GET">
+                    <input type="text" name="keyword" placeholder="Bạn cần tìm gì nào..."
+                        class="flex-grow-1 border-0 outline-none">
+                    <button type="submit" class="border-0 bg-transparent p-0">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <!-- Account & Cart -->
+                <div class="header__account d-flex align-items-center gap-2 gap-md-3 flex-shrink-0">
+
+                    <!-- Username -->
+                    <div class="header__account--username d-none d-lg-block text-white">
+                        LE VAN A
+                    </div>
+
+                    <!-- Login -->
+                    <a href="/auth/login"
+                        class="header__account--login d-none align-items-center justify-content-center border-0 flex-shrink-0">
+                        <i class="fa-regular fa-user"></i>
+                        <div>Đăng nhập</div>
+                    </a>
+
+                    <!-- Icon User -->
+                    <a href="/user-profile"
+                        class="header__account--avt active d-flex align-items-center justify-content-center text-decoration-none flex-shrink-0">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+
+                    <!-- Icon Cart -->
+                    <a href="/cart"
+                        class="header__account--cart d-flex align-items-center justify-content-center text-decoration-none flex-shrink-0 position-relative">
+                        <div
+                            class="header__account--cart-quantity fw-bold d-flex align-items-center justify-content-center position-absolute">
+                            10
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Breadcrumb -->
+    <nav class="c-breadcrumb" aria-label="breadcrumb">
+        <div class="c-breadcrumb__container container py-1">
+            <ol class="breadcrumb c-breadcrumb__list m-0 d-flex align-items-center">
+                <li class="breadcrumb-item c-breadcrumb__item">
+                    <a href="/" class="text-black">
+                        <i class="fa-solid fa-house"></i>
+                    </a>
+                </li>
+                <li class="breadcrumb-item c-breadcrumb__item active text-black" aria-current="page">
+                    Tin tức
+                </li>
+            </ol>
+        </div>
+    </nav>
+    <!-- End Breadcrumb -->
+
+    <!-- News Hub -->
+    <section class="news-hub my-5">
+        <div class="news-hub__container container">
+            <div class="news-hub__wrap row g-4">
+
+                <aside class="col-lg-3">
+                    <nav class="news-nav card border-0 shadow-sm rounded-4 overflow-hidden">
+                        <ul class="news-nav__list list-unstyled m-0 p-0">
+                            <li class="news-nav__item news-nav__item--has-sub">
+                                <div class="news-nav__link-group p-3 d-flex justify-content-between align-items-center">
+                                    <a href="#" class="news-nav__link text-decoration-none fw-bold">Tin công nghệ</a>
+                                    <i class="fa-solid fa-chevron-right fs-6"></i>
+                                </div>
+                                <ul class="news-nav__sub-list list-unstyled m-0 p-0">
+                                    <li><a href="#" class="news-nav__sub-link">iPhone 17 Series</a></li>
+                                    <li><a href="#" class="news-nav__sub-link">Laptop AI 2026</a></li>
+                                    <li><a href="#" class="news-nav__sub-link">Phụ kiện Smart</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="news-nav__item p-3 d-flex justify-content-between align-items-center border-top">
+                                <a href="#" class="news-nav__link text-decoration-none fw-bold">Games</a>
+                                <i class="fa-solid fa-chevron-right fs-6"></i>
+                            </li>
+
+                            <li class="news-nav__item news-nav__item--has-sub border-top">
+                                <div class="news-nav__link-group p-3 d-flex justify-content-between align-items-center">
+                                    <a href="#" class="news-nav__link text-decoration-none fw-bold">Tư vấn</a>
+                                    <i class="fa-solid fa-chevron-right fs-6"></i>
+                                </div>
+                                <ul class="news-nav__sub-list list-unstyled m-0 p-0">
+                                    <li><a href="#" class="news-nav__sub-link">Chọn mua Laptop</a></li>
+                                    <li><a href="#" class="news-nav__sub-link">Build PC đồ họa</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="news-nav__item p-3 d-flex justify-content-between align-items-center border-top">
+                                <a href="#" class="news-nav__link text-decoration-none fw-bold">Review sản phẩm</a>
+                                <i class="fa-solid fa-chevron-right fs-6"></i>
+                            </li>
+                        </ul>
+                    </nav>
+                </aside>
+
+                <div class="col-lg-9">
+                    <div class="news-hub__main">
+                        <div class="news-featured">
+                            <span class="news-featured__tag badge rounded-pill px-3 py-2 mb-3">Tin công nghệ</span>
+                            <h3 class="news-hub__title fw-bold mb-3">TIN NỔI BẬT</h3>
+
+                            <a href="#"
+                                class="news-card news-card--featured card border-0 shadow-sm overflow-hidden text-decoration-none text-dark">
+                                <div class="row g-0 p-2">
+                                    <div class="col-md-5">
+                                        <div class="news-card__image h-100">
+                                            <img src="/images/img_card.png"
+                                                class="img-fluid object-fit-cover h-100 w-100" alt="Featured">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-7">
+                                        <div class="card-body p-4">
+                                            <h5 class="news-card__title fw-bold fs-4 mb-3 line-clamp-2">ASUS ROG Ally X
+                                                sau 1 năm: Vẫn là "chân ái" cho game thủ</h5>
+                                            <p class="news-card__desc text-secondary mb-3 line-clamp-3">Đánh giá ASUS
+                                                ROG Ally X sau hơn 1 năm sử dụng để xem hiệu năng, pin và trải nghiệm
+                                                thực tế</p>
+                                            <div
+                                                class="news-card__meta d-flex align-items-center gap-2 text-muted small">
+                                                <i class="fa-regular fa-calendar-days"></i>
+                                                <span>30/01/2026 16:30</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                        <div class="news-hub__content row g-4 mt-4">
+                            <div class="col-xl-8">
+                                <h4 class="news-hub__subtitle fw-bold mb-3 border-bottom pb-2">TIN MỚI</h4>
+                                <div class="news-list d-flex flex-column">
+                                    <a href="#"
+                                        class="news-card news-card--sm card border-0 shadow-sm text-decoration-none text-dark p-2">
+                                        <div class="d-flex gap-3">
+                                            <img src="/images/img_card.png" class="news-card__thumb rounded-3">
+                                            <div class="news-card__content">
+                                                <h6 class="news-card__name line-clamp-2 fw-bold mb-1">ASUS ROG Ally X
+                                                    sau 1 năm: Có còn đáng mua?</h6>
+                                                <p
+                                                    class="news-card__text small text-muted d-none d-md-block mb-1 line-clamp-3">
+                                                    Cùng đánh giá chi tiết hiệu năng và pin</p>
+                                                <div class="news-card__date small text-black-50">30/01/2026</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="news-card news-card--sm card border-0 shadow-sm text-decoration-none text-dark p-2">
+                                        <div class="d-flex gap-3">
+                                            <img src="/images/img_card.png" class="news-card__thumb rounded-3">
+                                            <div class="news-card__content">
+                                                <h6 class="news-card__name line-clamp-2 fw-bold mb-1">ASUS ROG Ally X
+                                                    sau 1 năm: Có còn đáng mua?</h6>
+                                                <p
+                                                    class="news-card__text small text-muted d-none d-md-block mb-1 line-clamp-3">
+                                                    Cùng đánh giá chi tiết hiệu năng và pin</p>
+                                                <div class="news-card__date small text-black-50">30/01/2026</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#"
+                                        class="news-card news-card--sm card border-0 shadow-sm text-decoration-none text-dark p-2">
+                                        <div class="d-flex gap-3">
+                                            <img src="/images/img_card.png" class="news-card__thumb rounded-3">
+                                            <div class="news-card__content">
+                                                <h6 class="news-card__name line-clamp-2 fw-bold mb-1">ASUS ROG Ally X
+                                                    sau 1 năm: Có còn đáng mua?</h6>
+                                                <p
+                                                    class="news-card__text small text-muted d-none d-md-block mb-1 line-clamp-3">
+                                                    Cùng đánh giá chi tiết hiệu năng và pin</p>
+                                                <div class="news-card__date small text-black-50">30/01/2026</div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <button class="news-hub__button-more btn w-100 py-2 fw-bold mt-2">
+                                        XEM THÊM <i class="fa-solid fa-chevron-down ms-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <aside class="col-xl-4">
+                                <div class="news-most-viewed card border-0 shadow-sm p-3 rounded-4">
+                                    <div class="d-flex justify-content-between align-items-center mb-3">
+                                        <h4 class="news-hub__subtitle fw-bold m-0 fs-6 text-uppercase">Xem nhiều</h4>
+                                        <a href="#" class="small text-danger text-decoration-none fw-bold">Tất cả</a>
+                                    </div>
+                                    <div class="news-most-viewed__list d-flex flex-column gap-2">
+                                        <a href="#"
+                                            class="news-most-viewed__item d-flex align-items-center gap-2 text-decoration-none text-dark">
+                                            <img src="/images/news-1.png" class="news-most-viewed__img rounded-3">
+                                            <p class="news-most-viewed__name small mb-0 fw-medium line-clamp-3">Tính
+                                                năng chống ồn AI trên iPhone 17 lo</p>
+                                        </a>
+                                        <a href="#"
+                                            class="news-most-viewed__item d-flex align-items-center gap-2 text-decoration-none text-dark">
+                                            <img src="/images/news-1.png" class="news-most-viewed__img rounded-3">
+                                            <p class="news-most-viewed__name small mb-0 fw-medium line-clamp-3">Tính
+                                                năng chống ồn AI trên iPhone 17 lo</p>
+                                        </a>
+                                        <a href="#"
+                                            class="news-most-viewed__item d-flex align-items-center gap-2 text-decoration-none text-dark">
+                                            <img src="/images/news-1.png" class="news-most-viewed__img rounded-3">
+                                            <p class="news-most-viewed__name small mb-0 fw-medium line-clamp-3">Tính
+                                                năng chống ồn AI trên iPhone 17 lo</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End News Hub -->
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container container">
+            <!-- Subscribe Form -->
+            <div class="footer__subscribe row mx-lg-5 d-flex align-items-center p-4">
+                <div class="col-12 col-lg-5 text-center text-lg-start mb-3 mb-lg-0">
+                    <h5 class="m-0 fw-bold">GÓP Ý TRỰC TIẾP SHOP TẠI ĐÂY NHÉ</h5>
+                </div>
+
+                <div class="col-12 col-lg-7">
+                    <div class="footer__form--wrap p-2 d-flex align-items-center">
+                        <form class="footer__form--group d-flex bg-white p-1 w-100" action="">
+                            <input class="form-control border-0 bg-transparent shadow-none px-3" type="email"
+                                placeholder="Nhập email của bạn tại đây...">
+                            <button class="btn px-4 fw-bold border-0" type="submit">
+                                Gửi
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__content row justify-content-center text-start text-md-start gy-4">
+                <div class="col-6 col-md-3">
+                    <h6 class="footer__title mb-3">Hỗ trợ</h6>
+                    <ul class="footer__list list-unstyled ps-0">
+                        <li><a href="tel:19001990">Liên Hệ 1900 1990</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                        <li><a href="/orders">Đơn Hàng</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h6 class="footer__title mb-3">Về Chúng Tôi</h6>
+                    <ul class="footer__list list-unstyled ps-0">
+                        <li><a href="/about">Giới Thiệu</a></li>
+                        <li><a href="/certifications">Chứng Nhận</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h6 class="footer__title mb-3">Chính sách</h6>
+                    <ul class="footer__list list-unstyled ps-0">
+                        <li><a href="/shipping">Vận chuyển & Đổi trả</a></li>
+                        <li><a href="/refund">Huỷ & Hoàn tiền</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-3">
+                    <h6 class="footer__title mb-3">Kết nối với chúng tôi</h6>
+                    <div class="footer__socials d-flex gap-3">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom row border-top border-white border-opacity-25 py-4 align-items-center">
+
+                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
+                    <span class="small text-white">© 2026 E-Store. All rights reserved.</span>
+                </div>
+
+                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
+                    <h3 class="footer__logo m-0 fw-bold text-white d-inline-block">E-STORE</h3>
+                </div>
+
+                <div class="col-12 col-md-4 text-center text-md-end">
+                    <span class="small text-white">Cảm ơn bạn đã tin tưởng chúng tôi!!!</span>
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
