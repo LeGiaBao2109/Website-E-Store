@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -166,9 +166,67 @@
     </header>
     <!-- End Header -->
 
-    <main>
-        <!-- Code ở đây nha -->
-    </main>
+    <!-- Login Form -->
+    <section class="login-form d-flex align-items-center justify-content-center py-5">
+        <div class="login-form__container container d-flex justify-content-center">
+            <div class="auth-card">
+                <div class="auth-card__header text-center mt-4 mb-4">
+                    <h1 class="auth-card__title">Welcom Back</h1>
+                    <p class="auth-card-subtitle">
+                        Please enter your details to login
+                    </p>
+                </div>
+
+                <form action="/auth/login" method="POST" class="auth-form__container p-4">
+                    <div class="row g-3">
+                        <div class="col-12">
+                            <div class="input-group-custom position-relative d-flex align-items-center flex-column">
+                                <i class="fa-solid fa-phone position-absolute"></i>
+                                <input type="text" id="regPhone" class="form-control" placeholder="Phone number"
+                                    name="phone" onkeyup="checkInputs()" required>
+                                <small id="phoneErr"></small>
+                            </div>
+                        </div>
+
+                        <div class="col-12">
+                            <div class="input-group-custom position-relative d-flex align-items-center flex-column">
+                                <i class="fa-solid fa-key position-absolute"></i>
+                                <input type="password" id="regPassword" class="form-control" placeholder="Password"
+                                    name="password" onkeyup="checkInputs()" required>
+                                <small id="passErr"></small>
+                            </div>
+                        </div>
+
+                        <div class="col-12 d-flex justify-content-between align-items-center mb-3 custom-mobile-column">
+                            <div class="form-check m-0 p-0">
+                                <input type="checkbox" name="" id="">
+                                <label for="" class="text-white">Remember me</label>
+                            </div>
+                            <a href="#" class="text-white">Forgot password</a>
+                        </div>
+
+                        <div
+                            class="col-12 text-center my-3 d-flex align-items-center justify-content-center gap-2 flex-wrap">
+                            <p class="small mb-2 w-100 text-white">Or login with</p>
+                            <a href="#" class="google-btn d-flex align-items-center justify-content-center bg-white">
+                                <i class="fa-brands fa-google"></i>
+                            </a>
+                        </div>
+
+                        <div class="col-12">
+                            <button type="submit" class="btn btn-login w-100 fw-bold">Sign in</button>
+                        </div>
+
+                        <div class="col-12 text-center mt-3">
+                            <p class="mb-1">Don't have an account ? <a href="/register.html"
+                            class="fw-bold text-white text-decoration-none">Register</a></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- End Login Form -->
 
     <!-- Footer -->
     <footer class="footer">
@@ -251,7 +309,7 @@
     <!-- End Footer -->
 
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="../public/js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 
