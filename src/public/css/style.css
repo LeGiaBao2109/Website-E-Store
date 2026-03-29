@@ -2402,3 +2402,55 @@ img {
     }
 }
 /* End News Hub */
+
+/* Cart */
+.cart-item__image-container {
+    width: 80px;
+    flex-shrink: 0;
+}
+
+.cart-item__img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.text-truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+@media (max-width: 576px) {
+    .cart-item__image-container {
+        width: 60px;
+    }
+
+    .cart-item__name {
+        font-size: 0.85rem;
+    }
+
+    .cart-item__price--current {
+        font-size: 0.9rem;
+    }
+
+    .cart-item__price--old {
+        font-size: 0.7rem;
+    }
+
+    .cart-item__quantity-group {
+        scale: 0.9; 
+    }
+    
+    .cart-item__quantity-group button {
+        padding: 2px 8px !important;
+    }
+}
+
+.cart-footer {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    z-index: 999;
+}
+/* End Cart */
