@@ -203,48 +203,73 @@
                     </div>
 
                     <div class="product-detail__image-box mt-3">
-                        <ul
-                            class="product-detail__image-list--main d-flex overflow-hidden w-100 list-unstyled flex-nowrap">
-                            <div class="product-detail__image-item w-100">
-                                <img src="/images/product-1.png" alt="" class="img-fluid">
+                        <div class="product-detail__image--main-slider slider">
+                            <ul
+                                class="product-detail__image-list--main d-flex overflow-hidden w-100 list-unstyled flex-nowrap">
+                                <div class="product-detail__image-item w-100">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="product-detail__image-item w-100">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid">
+                                </div>
+                                <div class="product-detail__image-item w-100">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid">
+                                </div>
+                            </ul>
+                            <div class="slider__buttons">
+                                <button class="button button-left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+
+                                <button class="button button-right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
                             </div>
-                            <div class="product-detail__image-item w-100">
-                                <img src="/images/product-1.png" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="product-detail__image-slider slider">
+                            <ul
+                                class="product-detail__image-list w-100 d-flex overflow-hidden mt-2 list-unstyled flex-nowrap">
+                                <li class="product-detail__image-item">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                                </li>
+                                <li class="product-detail__image-item">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                                </li>
+                                <li class="product-detail__image-item">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                                </li>
+                                <li class="product-detail__image-item">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                                </li>
+                                <li class="product-detail__image-item">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                                </li>
+                                <li class="product-detail__image-item">
+                                    <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
+                                </li>
+                            </ul>
+                            <div class="slider__buttons">
+                                <button class="button button-left">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </button>
+
+                                <button class="button button-right">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </button>
                             </div>
-                            <div class="product-detail__image-item w-100">
-                                <img src="/images/product-1.png" alt="" class="img-fluid">
-                            </div>
-                        </ul>
-                        <ul class="product-detail__image-list d-flex overflow-hidden mt-2 list-unstyled flex-nowrap">
-                            <li class="product-detail__image-item">
-                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
-                            </li>
-                            <li class="product-detail__image-item">
-                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
-                            </li>
-                            <li class="product-detail__image-item">
-                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
-                            </li>
-                            <li class="product-detail__image-item">
-                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
-                            </li>
-                            <li class="product-detail__image-item">
-                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
-                            </li>
-                            <li class="product-detail__image-item">
-                                <img src="/images/product-1.png" alt="" class="img-fluid w-100 h-100">
-                            </li>
-                        </ul>
+                        </div>
+
                     </div>
 
                     <div class="product-detail__buttons d-flex align-items-center justify-content-between w-100 mt-3">
-                        <button class="product-detail__button-order m-0 border-0 fw-bold">ĐẶT NGAY</button>
-                        <button class="product-detail__button-add-cart m-0 border-0">
+                        <button class="product-detail__button-order m-0 border-0 fw-bold">MUA NGAY</button>
+                        <button class="product-detail__button-add-cart rounded-circle m-0 border-0">
                             <i class="fa-solid fa-cart-shopping"></i>
                         </button>
                     </div>
 
-                    <div class="product-detail__specs">
+                    <div class="product-detail__specs w-100">
                         <div
                             class="product-detail__specs--header d-flex align-items-center justify-content-between mt-3">
                             <h4 class="product-detail__specs--title fw-bold">
@@ -276,7 +301,8 @@
                                     </tr>
                                     <tr>
                                         <td class="text-secondary ps-4 py-3">Camera sau</td>
-                                        <td class="text-secondary ps-4 py-3">Chính: 48MP, Góc siêu rộng: 48MP, Tele: 48MP</td>
+                                        <td class="text-secondary ps-4 py-3">Chính: 48MP, Góc siêu rộng: 48MP, Tele:
+                                            48MP</td>
                                     </tr>
                                     <tr>
                                         <td class="text-secondary ps-4 py-3">Chipset</td>
@@ -293,15 +319,595 @@
                 </div>
 
                 <div class="product-detail__right">
+                    <div class="product-detail__prices d-flex justify-content-between">
+                        <div class="product-detail__prices--left">
+                            <h4 class="fw-bold m-0">
+                                Giá thành
+                            </h4>
+                            <div class="product-detail__price--discount fw-bold">
+                                45.990.000 vnđ
+                            </div>
+                        </div>
+                        <div class="product-detail__prices--right">
+                            <h4 class="m-0">
+                                Deal Hot 10%
+                            </h4>
+                            <div class="product-detail__price--original text-decoration-line-through text-black-50">
+                                49.990.000 vnđ
+                            </div>
+                        </div>
+                    </div>
 
+                    <div class="product-detail__storages mt-3">
+                        <h4 class="fw-bold m-0">
+                            Phiên bản
+                        </h4>
+                        <ul
+                            class="product-detail__storages--list list-unstyled d-flex align-items-center justify-content-start overflow-hidden">
+                            <li><a href="#">256GB</a></li>
+                            <li><a href="#">512gb</a></li>
+                            <li><a href="#">1TB</a></li>
+                        </ul>
+                    </div>
 
+                    <div class="product-detail__colors">
+                        <h4 class="fw-bold m-0">
+                            Màu sắc
+                        </h4>
+                        <ul
+                            class="product-detail__colors--list list-unstyled d-flex align-items-center justify-content-start overflow-hidden">
+                            <li>
+                                <a href="/products/detail"
+                                    class="d-flex align-items-center justify-content-start gap-3">
+                                    <div class="product-detail__colors--image">
+                                        <img src="/images/product-1.png" alt="img-fluid">
+                                    </div>
+                                    <div class="product-detail__colors--info fw-bold">
+                                        Xanh đậm
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/products/detail"
+                                    class="d-flex align-items-center justify-content-start gap-3">
+                                    <div class="product-detail__colors--image">
+                                        <img src="/images/product-3.png" alt="img-fluid">
+                                    </div>
+                                    <div class="product-detail__colors--info fw-bold">
+                                        Cam Vũ Trụ
+                                    </div>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="/products/detail"
+                                    class="d-flex align-items-center justify-content-start gap-3">
+                                    <div class="product-detail__colors--image">
+                                        <img src="/images/product-4.png" alt="img-fluid">
+                                    </div>
+                                    <div class="product-detail__colors--info fw-bold">
+                                        Bạc
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="product-detail__buttons d-flex align-items-center justify-content-start">
+                        <a href="#" class="product-detail__button--spec">
+                            <i class="fa-solid fa-hexagon-nodes"></i>
+                            Thông số kĩ thuật
+                        </a>
+
+                        <a href="#" class="product-detail__button--comment">
+                            <i class="fa-regular fa-comment"></i>
+                            Đánh giá sản phẩm
+                        </a>
+                    </div>
+
+                    <div class="product-detail__branch-shops">
+                        <form action="">
+                            <div
+                                class="product-detail__branch-shops--header d-flex align-items-center justify-content-between">
+                                <div class="">
+                                    <h4 class="product-detail__branch-shops--title fw-bold m-0">
+                                        Chi nhánh còn hàng
+                                    </h4>
+                                    <div class="product-detail__branch-shops--quantity">
+                                        30 cửa hàng còn hàng
+                                    </div>
+                                </div>
+                                <select name="city" id="city" class="product-detail__branch-shops--city">
+                                    <option value="" selected>Thành Phố</option>
+                                    <option value="Hồ Chí Minh">
+                                        Hồ Chí Minh
+                                    </option>
+                                    <option value="Hà Nội">Hà Nội</option>
+                                </select>
+
+                                <select name="area" id="area" class="product-detail__branch-shops--area">
+                                    <option value="" selected>Quận/Huyện</option>
+                                    <option value="Củ Chi">
+                                        Củ Chi
+                                    </option>
+                                    <option value="Gò Vấp">Gò Vấp</option>
+                                </select>
+                            </div>
+                            <div class="product-detail__branch-shops--body d-flex mt-3 flex-wrap">
+                                <div class="product-detail__branch-shops--content">
+                                    154 Nguyễn Thái Học, P. Phạm Ngũ Lão, Q.1, TP HCM
+                                </div>
+                                <div
+                                    class="product-detail__branch-shops--contact d-flex align-items-center justify-content-end">
+                                    <div class="fw-bold">
+                                        Liên Hệ
+                                    </div>
+                                    <div
+                                        class="product-detail__branch-shops--phone-number text-white d-flex align-items-center">
+                                        19001991
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
     <!-- End Product Detail -->
 
+    <!-- Product-card -->
+    <section class="product-card">
+        <div class="product-card__container container border-0">
+            <div class="product-card__header">
+                <div class="product-card__header-wrap d-flex align-items-center justify-content-start">
 
+                    <div class="product-card__header-left d-flex align-items-center">
+                        <h3 class="product-card__header-left--title m-0">
+                            CÓ THỂ BẠN SẼ THÍCH
+                        </h3>
+                    </div>
+
+                    <div class="product-card__header-right d-flex align-items-center">
+                        <ul class="category-product__list d-flex align-items-center justify-content-start m-0 p-0">
+                            <li class="list-unstyled text-center"><a href="">TƯƠNG TỰ</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="product-card-slider slider-item">
+                <div class="product-card-wrap">
+                    <!-- Product Item -->
+                    <div class="product-card__item border-0 d-inline-block w-100">
+                        <div class="product-card__item--image">
+                            <img src="/images/product-1.png">
+                        </div>
+                        <div class="product-card__item--content d-inline-block w-100">
+                            <h4 class="product-card__item--title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price--discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price--original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item--bottom d-flex align-items-center justify-content-between">
+                                <div class="product-card__item--vote">
+                                    <i class="fa-solid fa-heart"></i>
+                                    5
+                                </div>
+                                <button class="product-card__item--button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Product Item -->
+
+                    <!-- Product Item -->
+                    <div class="product-card__item border-0 d-inline-block w-100">
+                        <div class="product-card__item--image">
+                            <img src="/images/product-1.png">
+                        </div>
+                        <div class="product-card__item--content d-inline-block w-100">
+                            <h4 class="product-card__item--title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price--discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price--original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item--bottom d-flex align-items-center justify-content-between">
+                                <div class="product-card__item--vote">
+                                    <i class="fa-solid fa-heart"></i>
+                                    5
+                                </div>
+                                <button class="product-card__item--button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Product Item -->
+
+                    <!-- Product Item -->
+                    <div class="product-card__item border-0 d-inline-block w-100">
+                        <div class="product-card__item--image">
+                            <img src="/images/product-1.png">
+                        </div>
+                        <div class="product-card__item--content d-inline-block w-100">
+                            <h4 class="product-card__item--title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price--discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price--original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item--bottom d-flex align-items-center justify-content-between">
+                                <div class="product-card__item--vote">
+                                    <i class="fa-solid fa-heart"></i>
+                                    5
+                                </div>
+                                <button class="product-card__item--button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Product Item -->
+
+                    <!-- Product Item -->
+                    <div class="product-card__item border-0 d-inline-block w-100">
+                        <div class="product-card__item--image">
+                            <img src="/images/product-1.png">
+                        </div>
+                        <div class="product-card__item--content d-inline-block w-100">
+                            <h4 class="product-card__item--title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price--discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price--original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item--bottom d-flex align-items-center justify-content-between">
+                                <div class="product-card__item--vote">
+                                    <i class="fa-solid fa-heart"></i>
+                                    5
+                                </div>
+                                <button class="product-card__item--button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Product Item -->
+
+                    <!-- Product Item -->
+                    <div class="product-card__item border-0 d-inline-block w-100">
+                        <div class="product-card__item--image">
+                            <img src="/images/product-1.png">
+                        </div>
+                        <div class="product-card__item--content d-inline-block w-100">
+                            <h4 class="product-card__item--title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price--discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price--original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item--bottom d-flex align-items-center justify-content-between">
+                                <div class="product-card__item--vote">
+                                    <i class="fa-solid fa-heart"></i>
+                                    5
+                                </div>
+                                <button class="product-card__item--button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Product Item -->
+
+                    <!-- Product Item -->
+                    <div class="product-card__item border-0 d-inline-block w-100">
+                        <div class="product-card__item--image">
+                            <img src="/images/product-1.png">
+                        </div>
+                        <div class="product-card__item--content d-inline-block w-100">
+                            <h4 class="product-card__item--title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price--discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price--original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item--bottom d-flex align-items-center justify-content-between">
+                                <div class="product-card__item--vote">
+                                    <i class="fa-solid fa-heart"></i>
+                                    5
+                                </div>
+                                <button class="product-card__item--button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Product Item -->
+
+                    <!-- Product Item -->
+                    <div class="product-card__item border-0 d-inline-block w-100">
+                        <div class="product-card__item--image">
+                            <img src="/images/product-1.png">
+                        </div>
+                        <div class="product-card__item--content d-inline-block w-100">
+                            <h4 class="product-card__item--title">
+                                Iphone 17 Pro
+                            </h4>
+                            <div class="product-card__item-price">
+                                <div class="product-card__item-price--discount">
+                                    45.990.000 vnđ
+                                </div>
+                                <div class="product-card__item-price--original">
+                                    49.000.000 vnđ
+                                </div>
+                            </div>
+                            <div class="product-card__item--bottom d-flex align-items-center justify-content-between">
+                                <div class="product-card__item--vote">
+                                    <i class="fa-solid fa-heart"></i>
+                                    5
+                                </div>
+                                <button class="product-card__item--button">
+                                    <i class="fa-solid fa-cart-shopping"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Product Item -->
+                </div>
+
+                <div class="slider__buttons">
+                    <button class="button button-left">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+
+                    <button class="button button-right">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <div class="slider__pagination">
+                    <ul>
+                        <li class="active"></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Product-card -->
+
+    <!-- Product Desc -->
+    <section class="product-desc my-5">
+        <div class="product-desc__container container">
+            <div class="product-desc__wrap p-3 rounded-4 row g-4 mx-3">
+
+                <div class="product-desc__left col-12 col-lg-8">
+                    <div class="product-desc__content pe-lg-3">
+                        <h3 class="product-desc__content--title fw-bold fs-5 mb-3">Đặc điểm nổi bật của iPhone 17
+                            Pro 512GB</h3>
+
+                        <div class="product-desc__content--detail">
+                            <h4 class="fw-bold fs-6 mt-4">Điện thoại di động - thiết bị liên lạc, giải trí tiện lợi
+                            </h4>
+                            <p class="small text-secondary mb-3">
+                                Điện thoại hay còn được gọi là điện thoại di động là thiết bị liên lạc dùng để nghe
+                                gọi, nhắn tin, giúp kết nối con người, công việc mà không bị giới hạn bởi khoảng
+                                cách địa
+                                lý. Ngoài ra, các dòng smartphone hiện đại còn có nhiều tính năng nổi bật như chụp
+                                ảnh, quay video, kết nối
+                                internet, định vị GPS, tích hợp AI thông minh.
+                            </p>
+                            <p class="small text-secondary mb-3">
+                                Với sự đa dạng về giá thành, mẫu mã, tính năng, điện thoại đã trở thành thiết bị
+                                liên lạc, giải trí không thể thiếu trong cuộc sống hiện đại. Chúng luôn là trợ thủ
+                                đắc lực giúp cho cuộc sống luôn thông
+                                minh, hiện đại, tiện lợi và có khả năng kết nối hiệu quả.
+                            </p>
+
+                            <h4 class="fw-bold fs-6 mt-4">Chức năng của điện thoại là gì?</h4>
+                            <p class="small text-secondary mb-2">Điện thoại di động có chức năng chính là liên lạc,
+                                giải trí và xử lý công việc. Mỗi một chức năng sẽ hỗ trợ cho các tác vụ khác nhau,
+                                cụ thể bao gồm:</p>
+                            <ul class="small text-secondary ps-3 mb-3">
+                                <li class="mb-1"><strong class="text-dark">Liên lạc:</strong> Các dòng điện thoại
+                                    thường được dùng để gọi điện, gửi email, nhắn tin, call video và ứng dụng thông
+                                    qua mạng xã hội để trao đổi, giao tiếp không giới hạn khoảng cách.
+                                </li>
+                                <li class="mb-1"><strong class="text-dark">Giải trí:</strong> Điện thoại thông minh
+                                    được xem như một trung tâm giải trí di động nhờ cung cấp nhiều tính năng như
+                                    chơi game, lướt web, xem phim, đọc sách và các phương thức giải trí trực tuyến.
+                                </li>
+                                <li class="mb-1"><strong class="text-dark">Công việc:</strong> Smartphone có thể hỗ
+                                    trợ tốt cho việc thảo luận, soạn thảo văn bản, trình chiếu, họp trực tuyến, truy
+                                    cập tài liệu và quản lý công việc.
+                                </li>
+                                <li class="mb-1"><strong class="text-dark">Tiện ích:</strong> Ngoài ra, các mẫu điện
+                                    thoại còn được ứng dụng các
+                                    tiện ích khác như chụp ảnh quay phim, định vị, xem lịch, cài báo thức, ghi âm và
+                                    sử
+                                    dụng một vài ứng dụng khác
+                                    trong cuộc sống.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="product-desc__right col-12 col-lg-4">
+                    <div class="product-desc__sidebar bg-white rounded-4 p-3 p-md-4 h-100">
+
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <h3 class="fw-bold fs-6 m-0">Tin tức</h3>
+                            <a href="#"
+                                class="text-decoration-none d-flex align-items-center gap-1 small text-secondary">
+                                Xem tất cả <i class="fa-solid fa-chevron-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="d-flex flex-column gap-3">
+                            <!-- News Item -->
+                            <a href="#"
+                                class="news-item d-flex gap-3 align-items-center border rounded-3 p-2 text-decoration-none text-dark">
+                                <img src="/images/news-1.png" class="rounded-2"
+                                    style="width: 90px; height: 60px; object-fit: cover;">
+                                <h4 class="m-0 fw-medium" style="font-size: 13px;">Tìm hiểu chi tiết về tính năng
+                                    chống ồn 2 chiều bằng AI trên ...</h4>
+                            </a>
+                            <!-- News Item -->
+
+                            <!-- News Item -->
+                            <a href="#"
+                                class="news-item d-flex gap-3 align-items-center border rounded-3 p-2 text-decoration-none text-dark">
+                                <img src="/images/news-1.png" class="rounded-2"
+                                    style="width: 90px; height: 60px; object-fit: cover;">
+                                <h4 class="m-0 fw-medium" style="font-size: 13px;">Tìm hiểu chi tiết về tính năng
+                                    chống ồn 2 chiều bằng AI trên ...</h4>
+                            </a>
+                            <!-- News Item -->
+
+                            <!-- News Item -->
+                            <a href="#"
+                                class="news-item d-flex gap-3 align-items-center border rounded-3 p-2 text-decoration-none text-dark">
+                                <img src="/images/news-1.png" class="rounded-2"
+                                    style="width: 90px; height: 60px; object-fit: cover;">
+                                <h4 class="m-0 fw-medium" style="font-size: 13px;">Tìm hiểu chi tiết về tính năng
+                                    chống ồn 2 chiều bằng AI trên ...</h4>
+                            </a>
+                            <!-- News Item -->
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- End Product Desc -->
+
+    <!-- Review -->
+    <section class="product-reviews mt-3 position-relative">
+        <div class="product-reviews__container container p-2">
+            <div class="product-reviews__wrap p-4 rounded-4 shadow-sm">
+                <h4 class="reviews-title fw-bold mb-4">Đánh giá iPhone 17 Pro 512GB</h4>
+
+                <div class="product-reviews__overview d-flex p-4 rounded-4 flex-wrap align-items-center mb-4 bg-white border">
+                    <div class="overview-score text-center pe-5 me-5">
+                        <div class="score-number display-4 fw-bold">5.0<span class="fs-4 text-secondary">/5</span></div>
+                        <div class="score-stars">
+                            <i class="fa-solid fa-star my-2"></i>
+                            <i class="fa-solid fa-star my-2"></i>
+                            <i class="fa-solid fa-star my-2"></i>
+                            <i class="fa-solid fa-star my-2"></i>
+                            <i class="fa-solid fa-star my-2"></i>
+                        </div>
+                        <div class="score-count">1 lượt đánh giá</div>
+                    </div>
+
+                    <div class="overview-bars flex-grow-1">
+                        <div class="bar-item mb-2 d-flex align-items-center">
+                            <span class="star-num">5</span>
+                            <div class="progress-track mx-2 flex-grow-1">
+                                <div class="progress-fill h-100" style="width: 100%"></div>
+                            </div>
+                            <span class="bar-count">1 lượt đánh giá</span>
+                        </div>
+                        <div class="bar-item mb-2 d-flex align-items-center">
+                            <span class="star-num">4</span>
+                            <div class="progress-track mx-2 flex-grow-1">
+                                <div class="progress-fill h-100" style="width: 0%"></div>
+                            </div>
+                            <span class="bar-count">0 lượt đánh giá</span>
+                        </div>
+                    </div>
+
+                    <div class="overview-criteria ps-5 ms-5 border-start d-none d-lg-block">
+                        <h6>Tiêu chí đánh giá</h6>
+                        <ul class="criteria-list p-0 list-unstyled small">
+                            <li class="d-flex justify-content-between gap-3 mb-2">Hiệu năng <span><i class="fa-solid fa-star"></i> 5/5</span></li>
+                            <li class="d-flex justify-content-between gap-3 mb-2">Thời lượng pin <span><i class="fa-solid fa-star"></i> 5/5</span></li>
+                            <li class="d-flex justify-content-between gap-3 mb-2">Camera <span><i class="fa-solid fa-star"></i> 5/5</span></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="reviews-content bg-white p-4 rounded-4 border">
+                    <div class="row">
+                        <div class="col-lg-8 border-end">
+                            <div class="reviews-filters">
+                                <button class="filter-btn btn btn-outline-secondary px-3 py-1 rounded-pill small active">Tất cả</button>
+                                <button class="filter-btn btn btn-outline-secondary px-3 py-1 rounded-pill small">5 sao</button>
+                                <button class="filter-btn btn btn-outline-secondary px-3 py-1 rounded-pill small">4 sao</button>
+                            </div>
+
+                            <div class="review-item d-flex gap-4 py-4 border-bottom">
+                                <div class="user-info">
+                                    <span class="user-name d-block fw-bold">Ngô Việt Hoàng</span>
+                                </div>
+                                <div class="user-comment">
+                                    <div class="comment-stars">
+                                        <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i
+                                            class="fa-solid fa-star"></i>
+                                        <span class="comment-label">Tuyệt vời</span>
+                                    </div>
+                                    <div class="comment-tags">
+                                        <span class="tag badge bg-secondary-subtle me-1">Hiệu năng tốt</span>
+                                        <span class="tag badge bg-secondary-subtle me-1">Pin trâu</span>
+                                        <span class="tag badge bg-secondary-subtle me-1">Camera đỉnh</span>
+                                    </div>
+                                    <p class="comment-text">Sản phẩm rất tốt</p>
+                                    <small class="comment-date">Đã đánh giá vào 1 tháng trước</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 text-center ps-lg-4 mt-4 mt-lg-0">
+                            <button class="button-submit-review w-100 py-3 fw-bold">Viết đánh giá</button>
+                            <textarea class="review-textarea form-control bg-white rounded-3" rows="4"
+                                placeholder="Nhập đánh giá của bạn vào đây..."></textarea>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Review -->
 
     <!-- Footer -->
     <footer class="footer">
