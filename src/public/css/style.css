@@ -2165,7 +2165,7 @@ img {
     max-width: 500px;
     background: #fff;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    border-radius: 20px;
+    border-radius: 32px;
 }
 
 .auth-card__title {
