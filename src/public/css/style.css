@@ -2748,3 +2748,33 @@ img {
     }
 }
 /* End User Profile */
+
+/* Order History */
+.history-card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.history-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    border-color: var(--color-primary);
+}
+
+.bg-success-subtle {
+    background-color: #ebfaf0;
+    color: #28a745;
+}
+
+.bg-danger-subtle {
+    background-color: #fff5f5;
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.search-order .form-control:focus {
+    border-color: var(--color-primary);
+    box-shadow: none;
+}
+/* End Order History */

@@ -6,4 +6,6 @@ router.get("/", userController.overview);
 
 router.get("/info", userController.info);
 
+router.get("/order-history", userController.orderHistory);
+
 module.exports = router;
