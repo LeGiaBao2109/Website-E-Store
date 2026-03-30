@@ -8,4 +8,6 @@ router.get("/info", userController.info);
 
 router.get("/order-history", userController.orderHistory);
 
+router.get("/status", userController.status);
+
 module.exports = router;

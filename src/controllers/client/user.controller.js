@@ -11,3 +11,7 @@ module.exports.info = (req, res) => {
 module.exports.orderHistory = (req, res) => {
     res.sendFile(path.join(__dirname, "../../views/client/user-profile-order-history.html"));
 };
+
+module.exports.status = (req, res) => {
+    res.sendFile(path.join(__dirname, "../../views/client/user-profile-status.html"));
+};
