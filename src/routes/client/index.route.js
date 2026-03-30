@@ -6,6 +6,7 @@ const promotionRoutes = require("./promotion.route");
 const authRoutes = require("./auth.route");
 const newsRoutes = require("./news.route");
 const cartRoutes = require("./cart.route");
+const userRoutes = require("./user.route");
 
 router.use('/', homeRoutes);
 router.use('/products', productRoutes);
@@ -13,6 +14,7 @@ router.use('/promotions', promotionRoutes);
 router.use('/auth', authRoutes);
 router.use('/news', newsRoutes);
 router.use('/cart', cartRoutes);
+router.use('/user-profile', userRoutes);
 
 router.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname, '../../views/client/error-404.html'));

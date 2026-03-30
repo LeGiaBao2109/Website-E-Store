@@ -2105,7 +2105,7 @@ img {
 
 /* End Product Detail */
 
-/* Reviews.css */
+/* Reviews */
 .product-reviews {
     z-index: 2;
 }
@@ -2150,6 +2150,7 @@ img {
     border-radius: 0.5rem;
     margin-bottom: 1rem;
 }
+/* End Reviews */
 
 /* Login Form */
 .login-form {
@@ -2615,7 +2616,6 @@ img {
 
 /* Payment */
 .payment-summary__container {
-    max-width: 800px;
     width: 100%;
 }
 
@@ -2649,7 +2649,6 @@ img {
 
 .payment-method__card {
     cursor: pointer;
-    max-width: 800px;
 }
 
 .payment-method__icon-box {
@@ -2704,3 +2703,47 @@ img {
 }
 
 /* End Payment */
+
+
+/* User Profile */
+.profile-menu .nav-link {
+    transition: all 0.2s ease-in-out;
+    border: 1px solid transparent;
+}
+
+.profile-menu .nav-link:hover {
+    background-color: #f8f9fa;
+    color: var(--color-primary);
+}
+
+.profile-menu .nav-link.active {
+    background-color: #000;
+    color: #fff;
+}
+
+.border-dashed {
+    border-style: dashed;
+    border-width: 2px;
+    border-color: #dee2e6;
+}
+
+.order-item {
+    transition: transform 0.2s;
+    cursor: pointer;
+}
+
+.order-item:hover {
+    transform: scale(1.02);
+    border-color: var(--color-primary);
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .profile-menu {
+        flex-direction: row;
+        overflow-x: auto;
+        white-space: nowrap;
+        padding-bottom: 10px;
+    }
+}
+/* End User Profile */

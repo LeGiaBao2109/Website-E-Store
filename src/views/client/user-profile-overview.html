@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="../public/css/style.css">
+    <link rel="stylesheet" href="/css/style.css">
 </head>
 
 <body>
@@ -166,92 +166,108 @@
     </header>
     <!-- End Header -->
 
-    <main>
-        <!-- Code ở đây nha -->
-    </main>
+    <!-- User Profile -->
+    <section class="user-dashboard py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <aside class="col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 p-4">
+                        <div class="text-center mb-4">
+                            <div class="avatar-placeholder mx-auto mb-3 rounded-circle bg-secondary-subtle d-flex align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <i class="fa-solid fa-user fs-1 text-secondary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">LÊ VĂN A</h5>
+                            <small class="text-muted">034xxxxx84</small>
+                        </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__container container">
-            <!-- Subscribe Form -->
-            <div class="footer__subscribe row mx-lg-5 d-flex align-items-center p-4">
-                <div class="col-12 col-lg-5 text-center text-lg-start mb-3 mb-lg-0">
-                    <h5 class="m-0 fw-bold">GÓP Ý TRỰC TIẾP SHOP TẠI ĐÂY NHÉ</h5>
-                </div>
+                        <ul class="nav flex-column gap-2 profile-menu">
+                            <li class="nav-item">
+                                <a href="/user-profile" class="nav-link active rounded-3 p-3">
+                                    <i class="fa-solid fa-house-chimney me-2"></i> Tổng quan
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/info" class="nav-link text-dark rounded-3 p-3">
+                                    <i class="fa-solid fa-user-gear me-2"></i> Thông tin người dùng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/status" class="nav-link text-dark rounded-3 p-3">
+                                    <i class="fa-solid fa-truck-fast me-2"></i> Trạng thái đơn hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/order-history" class="nav-link text-dark rounded-3 p-3">
+                                    <i class="fa-solid fa-clock-rotate-left me-2"></i> Lịch sử mua hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/vouchers" class="nav-link text-dark rounded-3 p-3">
+                                    <i class="fa-solid fa-ticket me-2"></i> Mã giảm giá
+                                </a>
+                            </li>
+                            <li class="nav-item mt-3 border-top pt-3">
+                                <a href="" class="nav-link text-danger fw-bold p-3">
+                                    <i class="fa-solid fa-right-from-bracket me-2"></i> Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
 
-                <div class="col-12 col-lg-7">
-                    <div class="footer__form--wrap p-2 d-flex align-items-center">
-                        <form class="footer__form--group d-flex bg-white p-1 w-100" action="">
-                            <input class="form-control border-0 bg-transparent shadow-none px-3" type="email"
-                                placeholder="Nhập email của bạn tại đây...">
-                            <button class="btn px-4 fw-bold border-0" type="submit">
-                                Gửi
-                            </button>
-                        </form>
+                <div class="col-lg-9">
+                    <div class="row g-3 mb-4 text-center">
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <span class="text-muted small fw-bold">SỐ ĐƠN HÀNG ĐÃ MUA</span>
+                                <h2 class="fw-bold m-0 mt-2">10</h2>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <span class="text-muted small fw-bold">TỔNG CHI TIÊU</span>
+                                <h2 class="fw-bold m-0 mt-2 text-danger">45.990.000 vnđ</h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row g-4">
+                        <div class="col-md-8">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <h6 class="fw-bold mb-4">Đơn hàng gần đây</h6>
+                                <div class="order-item d-flex align-items-center gap-3 p-3 border rounded-4 mb-3">
+                                    <img src="/images/product-1.png" width="60" class="rounded-3">
+                                    <div class="flex-grow-1">
+                                        <p class="fw-bold mb-0">Iphone 17 Pro 512GB</p>
+                                        <small class="text-muted">Ngày đặt: 12/01/2026</small>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="fw-bold text-dark">45.990.000đ</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="card border-0 shadow-sm rounded-4 p-4 h-100">
+                                <h6 class="fw-bold mb-4">Mã giảm giá của bạn</h6>
+                                <div class="voucher-box p-3 border border-dashed rounded-3 mb-2"
+                                    style="background: #fffafa;">
+                                    <p class="fw-bold text-danger mb-1 small">ƯU ĐÃI TẾT 2026</p>
+                                    <p class="small mb-0 text-muted">HSD: 30/12/2026</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-
-            <div class="footer__content row justify-content-center text-start text-md-start gy-4">
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Hỗ trợ</h6>
-                    <ul class="footer__list list-unstyled ps-0">
-                        <li><a href="tel:19001990">Liên Hệ 1900 1990</a></li>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="/orders">Đơn Hàng</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Về Chúng Tôi</h6>
-                    <ul class="footer__list list-unstyled ps-0">
-                        <li><a href="/about">Giới Thiệu</a></li>
-                        <li><a href="/certifications">Chứng Nhận</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Chính sách</h6>
-                    <ul class="footer__list list-unstyled ps-0">
-                        <li><a href="/shipping">Vận chuyển & Đổi trả</a></li>
-                        <li><a href="/refund">Huỷ & Hoàn tiền</a></li>
-                    </ul>
-                </div>
-
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Kết nối với chúng tôi</h6>
-                    <div class="footer__socials d-flex gap-3">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-                </div>
-            </div>
-
-            <div class="footer__bottom row border-top border-white border-opacity-25 py-4 align-items-center">
-
-                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <span class="small text-white">© 2026 E-Store. All rights reserved.</span>
-                </div>
-
-                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
-                    <h3 class="footer__logo m-0 fw-bold text-white d-inline-block">E-STORE</h3>
-                </div>
-
-                <div class="col-12 col-md-4 text-center text-md-end">
-                    <span class="small text-white">Cảm ơn bạn đã tin tưởng chúng tôi!!!</span>
-                </div>
-
-            </div>
-
         </div>
-    </footer>
-    <!-- End Footer -->
+    </section>
+    <!-- End User Profile -->
 
     <script src="/js/bootstrap.bundle.min.js"></script>
-    <script src="../public/js/script.js"></script>
+    <script src="/js/script.js"></script>
 
 </body>
 
