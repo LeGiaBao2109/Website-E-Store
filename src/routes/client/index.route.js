@@ -15,7 +15,7 @@ router.use('/news', newsRoutes);
 router.use('/cart', cartRoutes);
 
 router.use((req, res) => {
-    res.status(404).sendFile(path.join(__dirname, '../../views/error-404.html'));
+    res.status(404).sendFile(path.join(__dirname, '../../views/client/error-404.html'));
 });
 
 module.exports = router;
