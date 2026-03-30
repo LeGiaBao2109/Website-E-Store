@@ -2,13 +2,12 @@
 <html>
 
 <head>
-    <title>Trang Giỏ Hàng</title>
+    <title>Trang Thông Tin Thanh Toán</title>
     <link rel="stylesheet" href="/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
         integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="/css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -167,127 +166,170 @@
     </header>
     <!-- End Header -->
 
-    <!-- Cart -->
-    <section class="cart py-4">
-        <div class="cart__container container">
-            <div class="cart__header d-flex align-items-center mb-4">
-                <a href="/" class="cart__back text-dark me-3">
+    <!-- Payment Info -->
+    <section class="payment-info py-4">
+        <div class="payment-info__container container">
+            <div class="payment-info__header d-flex align-items-center mb-4">
+                <a href="/" class="payment-info__back text-dark me-3">
                     <i class="fa-solid fa-arrow-left fs-4"></i>
                 </a>
-                <h4 class="cart__title fw-bold m-0 flex-grow-1 text-center">Giỏ hàng của bạn</h4>
+                <h4 class="payment-info__title fw-bold m-0 flex-grow-1 text-center">Thông tin thanh toán</h4>
             </div>
 
-            <div class="cart__tabs d-flex justify-content-center gap-2 mb-4">
-                <button class="cart__tab-btn cart__tab-btn--active btn px-4 py-2">Giỏ hàng</button>
-                <button class="cart__tab-btn btn px-4 py-2 bg-white border">Trả góp</button>
+            <div class="payment__tabs d-flex justify-content-center align-items-center gap-2 mb-4">
+                <span class="payment__tabs-btn text-center active py-2">
+                    <a href="payment-info.html" class="fw-bold">
+                        Thông tin thanh toán
+                    </a>
+                </span>
+
+                <span class="payment__tabs-btn text-center py-2">
+                    <a href="payment.html" class="fw-bold">
+                        Thanh toán
+                    </a>
+                </span>
             </div>
 
-            <div class="cart__select-all d-flex align-items-center mb-3">
-                <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="selectAll">
-                    <label class="form-check-label fw-bold ms-2" for="selectAll">Chọn tất cả</label>
-                </div>
-            </div>
-
-            <div class="cart__list d-flex flex-column gap-3">
-
-                <div class="cart-item card border-0 shadow-sm rounded-4 p-2 p-md-3 mb-3">
+            <div class="payment-info__list-item d-flex flex-column gap-3 mx-auto">
+                <div class="payment-info-item card border-0 shadow-sm rounded-4 p-2 p-md-3 mb-3">
                     <div class="d-flex align-items-center flex-nowrap gap-2 gap-md-3">
-                        <div class="cart-item__check">
-                            <input class="form-check-input" type="checkbox" checked style="width: 18px; height: 18px;">
+                        <div class="payment-info-item__image-container">
+                            <img src="/images/category-5.png" alt="Product" class="payment-info-item__img">
                         </div>
 
-                        <div class="cart-item__image-container">
-                            <img src="/images/category-5.png" alt="Product" class="cart-item__img">
-                        </div>
-
-                        <div class="cart-item__info flex-grow-1 overflow-hidden">
+                        <div class="payment-info-item__info flex-grow-1 overflow-hidden">
                             <div class="d-flex justify-content-between align-items-start">
-                                <h6 class="cart-item__name fw-bold mb-0 text-truncate">Sandisk Phone Drive USB 3.2 Gen 1
+                                <h6 class="payment-info-item__name mb-0 text-truncate">Sandisk Phone Drive USB 3.2 Gen 1
                                 </h6>
-                                <button class="cart-item__btn-remove border-0 bg-transparent text-muted ms-2">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </button>
                             </div>
 
-                            <div class="cart-item__date text-muted mt-1" style="font-size: 0.75rem;">
-                                <i class="fa-regular fa-calendar-check me-1"></i>29/03/2026
-                            </div>
-
-                            <div class="cart-item__price-group d-flex flex-wrap align-items-center gap-2 mt-1">
-                                <span class="cart-item__price--current text-danger fw-bold">274.000đ</span>
+                            <div class="payment-info-item__price-group d-flex flex-wrap align-items-center gap-2 mt-1">
+                                <span class="payment-info-item__price--current text-danger fw-bold">274.000đ</span>
                                 <span
-                                    class="cart-item__price--old text-muted text-decoration-line-through small">490.000đ</span>
+                                    class="payment-info-item__price--old text-muted text-decoration-line-through small">490.000đ</span>
                             </div>
                         </div>
 
-                        <div class="cart-item__quantity">
-                            <div class="cart-item__quantity-group d-flex align-items-center bg-light rounded-2">
-                                <button class="btn btn-sm p-1 p-md-2">-</button>
-                                <span class="px-2 fw-bold small">1</span>
-                                <button class="btn btn-sm p-1 p-md-2">+</button>
+                        <div class="payment-info-item__quantity">
+                            <div class="payment-info-item__quantity-group d-flex align-items-center rounded-2">
+                                Số lượng: <span class="mx-2"> 1</span>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
 
-                <div class="cart-item card border-0 shadow-sm rounded-4 p-2 p-md-3 mb-3">
-                    <div class="d-flex align-items-center flex-nowrap gap-2 gap-md-3">
-                        <div class="cart-item__check">
-                            <input class="form-check-input" type="checkbox" checked style="width: 18px; height: 18px;">
-                        </div>
+            <h5 class="customer-info__title fw-bold text-uppercase mb-3">
+                Thông tin khách hàng
+            </h5>
 
-                        <div class="cart-item__image-container">
-                            <img src="/images/category-5.png" alt="Product" class="cart-item__img">
-                        </div>
-
-                        <div class="cart-item__info flex-grow-1 overflow-hidden">
-                            <div class="d-flex justify-content-between align-items-start">
-                                <h6 class="cart-item__name fw-bold mb-0 text-truncate">Sandisk Phone Drive USB 3.2 Gen 1
-                                </h6>
-                                <button class="cart-item__btn-remove border-0 bg-transparent text-muted ms-2">
-                                    <i class="fa-solid fa-trash-can"></i>
-                                </button>
+            <div class="payment-info__customer-info">
+                <div class="customer-info__container container">
+                    <div class="customer-info__card card border-0 shadow-sm rounded-4 p-4 m-0">
+                        <div class="d-flex justify-content-between align-items-center mb-3">
+                            <div class="d-flex align-items-center gap-2">
+                                <h5 class="customer-info__name m-0">Lê Gia Bảo</h5>
                             </div>
-
-                            <div class="cart-item__date text-muted mt-1" style="font-size: 0.75rem;">
-                                <i class="fa-regular fa-calendar-check me-1"></i>29/03/2026
-                            </div>
-
-                            <div class="cart-item__price-group d-flex flex-wrap align-items-center gap-2 mt-1">
-                                <span class="cart-item__price--current text-danger fw-bold">274.000đ</span>
-                                <span
-                                    class="cart-item__price--old text-muted text-decoration-line-through small">490.000đ</span>
+                            <div class="customer-info__phone text-secondary">
+                                0344314284
                             </div>
                         </div>
 
-                        <div class="cart-item__quantity">
-                            <div class="cart-item__quantity-group d-flex align-items-center bg-light rounded-2">
-                                <button class="btn btn-sm p-1 p-md-2">-</button>
-                                <span class="px-2 fw-bold small">1</span>
-                                <button class="btn btn-sm p-1 p-md-2">+</button>
+                        <div class="customer-info__email-group mb-3">
+                            <label class="text-uppercase text-muted small fw-bold mb-1 d-block">Email</label>
+                            <input type="email" class="form-control border-0 border-bottom rounded-0 px-0 shadow-none"
+                                value="giabao.yugioh@gmail.com">
+                        </div>
+
+                        <div class="customer-info__checkbox mt-1">
+                            <div class="form-check d-flex align-items-center gap-2 p-0">
+                                <input class="form-check-input m-0" type="checkbox" id="newsletter">
+                                <label class="form-check-label fw-medium ms-2" for="newsletter">
+                                    Nhận email thông báo và ưu đãi từ E-Store
+                                </label>
                             </div>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div style="height: 100px;"></div>
-        </div>
 
-        <div class="cart-footer d-flex align-items-center position-fixed bottom-0 start-0 end-0 bg-white border-top shadow-lg p-3">
-            <div class="container d-flex justify-content-between align-items-center">
-                <div class="cart-footer__total">
-                    <p class="m-0 fw-bold">Tạm tính:</p>
-                    <h5 class="text-danger fw-bold m-0">2.259.500đ</h5>
+            <div class="payment-info__shipping-info mt-4">
+                <div class="shipping-info__container container">
+                    <h5 class="payment-info__title fw-bold mb-3">THÔNG TIN NHẬN HÀNG</h5>
+
+                    <div class="shipping-info__card card border-0 shadow-sm rounded-4 overflow-hidden">
+                        <div class="shipping-info__tabs d-flex">
+                            <div
+                                class="shipping-info__tab-btn active d-flex align-items-center justify-content-center py-3 flex-grow-1 border-bottom">
+                                <input type="radio" name="shippingMethod" id="atStore" checked
+                                    class="form-check-input me-2 m-0">
+                                <label for="atStore" class="fw-bold m-0">Nhận tại cửa hàng</label>
+                            </div>
+                            <div
+                                class="shipping-info__tab-btn d-flex align-items-center justify-content-center py-3 flex-grow-1 border-bottom bg-light">
+                                <input type="radio" name="shippingMethod" id="atHome" class="form-check-input me-2 m-0">
+                                <label for="atHome" class="fw-bold m-0 text-secondary">Giao hàng tận nơi</label>
+                            </div>
+                        </div>
+
+                        <div class="shipping-info__body p-4">
+                            <div class="row g-3">
+                                <div class="col-md-6">
+                                    <label class="text-uppercase text-muted small fw-bold mb-1 d-block">Tỉnh / Thành
+                                        phố</label>
+                                    <select
+                                        class="form-select border-0 border-bottom rounded-0 px-0 shadow-none fw-medium">
+                                        <option selected>Hồ Chí Minh</option>
+                                        <option value="1">Hà Nội</option>
+                                        <option value="2">Đà Nẵng</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-md-6">
+                                    <label class="text-uppercase text-muted small fw-bold mb-1 d-block">Quận /
+                                        Huyện</label>
+                                    <select
+                                        class="form-select border-0 border-bottom rounded-0 px-0 shadow-none fw-medium">
+                                        <option selected>Quận 2</option>
+                                        <option value="1">Quận 1</option>
+                                        <option value="2">Quận Bình Thạnh</option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <label class="text-uppercase text-muted small fw-bold mb-1 d-block">Cửa hàng</label>
+                                    <select
+                                        class="form-select border-0 border-bottom rounded-0 px-0 shadow-none fw-medium">
+                                        <option selected>190 Nguyễn Thị Định, khu phố 2, P. An Phú, Q.2, TP. HCM
+                                        </option>
+                                    </select>
+                                </div>
+
+                                <div class="col-12 mt-4">
+                                    <input type="text"
+                                        class="form-control border-0 border-bottom rounded-0 px-0 shadow-none"
+                                        placeholder="Ghi chú khác (nếu có)">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <button class="cart-footer__btn-submit btn btn-danger px-5 py-2 fw-bold rounded-3">
-                    MUA NGAY (2)
-                </button>
+            </div>
+
+            <div class="payment-info-footer d-flex align-items-center position-fixed bottom-0 start-0 end-0 bg-white border-top shadow-lg p-3">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="payment-info-footer__total">
+                        <p class="m-0 fw-bold">Tạm tính:</p>
+                        <h5 class="text-danger fw-bold m-0">2.259.500đ</h5>
+                    </div>
+                    <button class="payment-info-footer__btn-submit btn btn-danger px-5 py-2 fw-bold rounded-3">
+                        TIẾP TỤC
+                    </button>
+                </div>
             </div>
         </div>
     </section>
-    <!-- End Cart -->
+    <!-- End Payment Info -->
 
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>
