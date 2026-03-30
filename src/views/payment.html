@@ -166,89 +166,224 @@
     </header>
     <!-- End Header -->
 
-    <main>
-        <!-- Code ở đây nha -->
-    </main>
+    <!-- Payment -->
+    <section class="payment-info py-4">
+        <div class="payment-info__container container">
+            <div class="payment-info__header d-flex align-items-center mb-4">
+                <a href="/" class="payment-info__back text-dark me-3">
+                    <i class="fa-solid fa-arrow-left fs-4"></i>
+                </a>
+                <h4 class="payment-info__title fw-bold m-0 flex-grow-1 text-center">Thanh toán</h4>
+            </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="footer__container container">
-            <!-- Subscribe Form -->
-            <div class="footer__subscribe row mx-lg-5 d-flex align-items-center p-4">
-                <div class="col-12 col-lg-5 text-center text-lg-start mb-3 mb-lg-0">
-                    <h5 class="m-0 fw-bold">GÓP Ý TRỰC TIẾP SHOP TẠI ĐÂY NHÉ</h5>
-                </div>
+            <div class="payment__tabs d-flex justify-content-center align-items-center gap-2 mb-4">
+                <span class="payment__tabs-btn text-center py-2">
+                    <a href="/cart/payment-info" class="fw-bold">
+                        Thông tin thanh toán
+                    </a>
+                </span>
 
-                <div class="col-12 col-lg-7">
-                    <div class="footer__form--wrap p-2 d-flex align-items-center">
-                        <form class="footer__form--group d-flex bg-white p-1 w-100" action="">
-                            <input class="form-control border-0 bg-transparent shadow-none px-3" type="email"
-                                placeholder="Nhập email của bạn tại đây...">
-                            <button class="btn px-4 fw-bold border-0" type="submit">
-                                Gửi
-                            </button>
-                        </form>
+                <span class="payment__tabs-btn active text-center py-2">
+                    <a href="/cart/payment" class="fw-bold">
+                        Thanh toán
+                    </a>
+                </span>
+            </div>
+
+            <div class="payment-order-summary">
+                <div class="payment-summary__container container">
+                    <div class="payment__card card border-0 shadow-sm rounded-4 p-4 mx-auto">
+
+                        <div class="payment__voucher mb-4">
+                            <div class="d-flex gap-2 border-bottom pb-2">
+                                <input type="text"
+                                    class="payment__voucher-input form-control border-0 px-0 shadow-none fw-medium"
+                                    placeholder="Nhập mã giảm giá (chỉ áp dụng 1 lần)">
+                                <button
+                                    class="payment__voucher-btn btn btn-light text-muted rounded-3 border text-center">Áp
+                                    dụng</button>
+                            </div>
+                        </div>
+
+                        <div class="payment__details">
+                            <div class="payment__row d-flex justify-content-between mb-3">
+                                <span class="payment__label text-secondary fw-medium">Số lượng sản phẩm</span>
+                                <span class="payment__value">01</span>
+                            </div>
+
+                            <div class="payment__row d-flex justify-content-between mb-3">
+                                <span class="payment__label text-secondary fw-medium">Tổng tiền hàng</span>
+                                <span class="payment__value fw-bold">2.990.000đ</span>
+                            </div>
+
+                            <div class="payment__row d-flex justify-content-between mb-3 border-bottom pb-3">
+                                <span class="payment__label text-secondary fw-medium">Phí vận chuyển</span>
+                                <span class="payment__value text-success fw-bold">Miễn phí</span>
+                            </div>
+
+                            <div class="payment__row d-flex justify-content-between mt-3 mb-3">
+                                <span class="payment__label text-secondary fw-medium">Giảm giá</span>
+                                <span class="payment__value">- 900.000đ</span>
+                            </div>
+
+                            <div class="payment__total-row d-flex justify-content-between align-items-end">
+                                <div class="payment__total-text">
+                                    <h5 class="payment__total-title fw-bold m-0">Tổng tiền</h5>
+                                    <small class="payment__total-note text-muted fst-italic">Đã gồm VAT và được làm
+                                        tròn</small>
+                                </div>
+                                <div class="payment__total-amount text-dark m-0 fw-bold">2.090.000đ</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="footer__content row justify-content-center text-start text-md-start gy-4">
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Hỗ trợ</h6>
-                    <ul class="footer__list list-unstyled ps-0">
-                        <li><a href="tel:19001990">Liên Hệ 1900 1990</a></li>
-                        <li><a href="/faq">FAQ</a></li>
-                        <li><a href="/orders">Đơn Hàng</a></li>
-                    </ul>
-                </div>
+            <h5 class="payment-info__title fw-bold my-3">THÔNG TIN THANH TOÁN</h5>
 
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Về Chúng Tôi</h6>
-                    <ul class="footer__list list-unstyled ps-0">
-                        <li><a href="/about">Giới Thiệu</a></li>
-                        <li><a href="/certifications">Chứng Nhận</a></li>
-                        <li><a href="/blog">Blog</a></li>
-                    </ul>
-                </div>
+            <div class="payment-method-selected mb-4 p-2">
+                <div class="payment-method__card card border-0 shadow-sm rounded-4 p-3 d-flex flex-row align-items-center justify-content-between mx-auto"
+                    data-bs-toggle="modal" data-bs-target="#paymentMethodModal">
 
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Chính sách</h6>
-                    <ul class="footer__list list-unstyled ps-0">
-                        <li><a href="/shipping">Vận chuyển & Đổi trả</a></li>
-                        <li><a href="/refund">Huỷ & Hoàn tiền</a></li>
-                    </ul>
-                </div>
+                    <div class="d-flex align-items-center gap-3">
+                        <div
+                            class="payment-method__icon-box d-flex align-items-center justify-content-center border border-danger border-2 rounded-3">
+                            <i class="fa-solid fa-qrcode text-danger fs-4"></i>
+                        </div>
+                        <span class="payment-method__name fw-bold text-dark">Chuyển khoản ngân hàng qua mã QR</span>
+                    </div>
 
-                <div class="col-6 col-md-3">
-                    <h6 class="footer__title mb-3">Kết nối với chúng tôi</h6>
-                    <div class="footer__socials d-flex gap-3">
-                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
-                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <div class="payment-method__change text-danger fw-bold d-flex align-items-center gap-1">
+                        thay đổi <i class="fa-solid fa-chevron-right"></i>
                     </div>
                 </div>
             </div>
 
-            <div class="footer__bottom row border-top border-white border-opacity-25 py-4 align-items-center">
+            <h5 class="payment-info__title fw-bold my-3">THÔNG TIN NHẬN HÀNG</h5>
 
-                <div class="col-12 col-md-4 text-center text-md-start mb-3 mb-md-0">
-                    <span class="small text-white">© 2026 E-Store. All rights reserved.</span>
+            <div class="payment-order-info mt-4">
+                <div class="payment-order-info__container container">
+                    <div class="payment__card card border-0 shadow-sm rounded-4 p-4 mx-auto">
+                        <div class="payment__details">
+                            <div class="payment__row d-flex justify-content-between mb-3">
+                                <span class="payment__label text-secondary fw-medium">Khách hàng</span>
+                                <span class="payment__value">Lê Văn A</span>
+                            </div>
+                            <div class="payment__row d-flex justify-content-between mb-3">
+                                <span class="payment__label text-secondary fw-medium">Số điện thoại</span>
+                                <span class="payment__value">0344314284</span>
+                            </div>
+                            <div class="payment__row d-flex justify-content-between mb-3">
+                                <span class="payment__label text-secondary fw-medium">Email</span>
+                                <span class="payment__value">levana@gmail.com</span>
+                            </div>
+                            <div class="payment__row d-flex justify-content-between mb-3">
+                                <span class="payment__label text-secondary fw-medium">Nhận hàng tại</span>
+                                <span class="payment__value">12 Nguyễn Văn Bảo, Phường Hạnh Thông, Quận Gò Vấp, TP. Hồ
+                                    Chí Minh</span>
+                            </div>
+                            <div class="payment__row d-flex justify-content-between mb-3">
+                                <span class="payment__label text-secondary fw-medium">Người nhận</span>
+                                <span class="payment__value">Lê Văn A - 0344314284</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-
-                <div class="col-12 col-md-4 text-center mb-3 mb-md-0">
-                    <h3 class="footer__logo m-0 fw-bold text-white d-inline-block">E-STORE</h3>
-                </div>
-
-                <div class="col-12 col-md-4 text-center text-md-end">
-                    <span class="small text-white">Cảm ơn bạn đã tin tưởng chúng tôi!!!</span>
-                </div>
-
             </div>
 
+            <div
+                class="payment-info-footer d-flex align-items-center position-fixed bottom-0 start-0 end-0 bg-white border-top shadow-lg p-3">
+                <div class="container d-flex justify-content-between align-items-center">
+                    <div class="payment-info-footer__total">
+                        <p class="m-0 fw-bold">Tạm tính:</p>
+                        <h5 class="text-danger fw-bold m-0">2.259.500đ</h5>
+                    </div>
+                    <button class="payment-info-footer__btn-submit btn btn-danger px-5 py-2 fw-bold rounded-3">
+                        TIẾP TỤC
+                    </button>
+                </div>
+            </div>
         </div>
-    </footer>
-    <!-- End Footer -->
+    </section>
+
+    <div class="modal fade" id="paymentMethodModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0 rounded-4">
+                <div class="modal-header border-0 p-4 pb-0">
+                    <h5 class="modal-title fw-bold">Chọn phương thức thanh toán</h5>
+                    <button type="button" class="btn-close shadow-none" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body p-4">
+                    <p class="text-muted small fw-bold text-uppercase mb-3">Khả dụng</p>
+
+                    <div class="payment-options d-flex flex-column gap-3">
+                        <div class="payment-option__item p-1">
+                            <input type="radio" class="btn-check" name="payMethod" id="cod" checked>
+                            <label
+                                class="card border p-3 rounded-4 w-100 d-flex flex-row align-items-center justify-content-between"
+                                for="cod">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="https://cdn-icons-png.flaticon.com/512/2331/2331895.png" width="35">
+                                    <span class="fw-bold">Thanh toán khi nhận hàng</span>
+                                </div>
+                                <div class="check-icon"><i class="fa-solid fa-circle-check text-danger"></i></div>
+                            </label>
+                        </div>
+
+                        <div class="payment-option__item p-1">
+                            <input type="radio" class="btn-check" name="payMethod" id="momo">
+                            <label
+                                class="card border p-3 rounded-4 w-100 d-flex flex-row align-items-center justify-content-between"
+                                for="momo">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="/images/momo.png" width="35">
+                                    <div>
+                                        <span class="fw-bold d-block">Ví MoMo</span>
+                                    </div>
+                                </div>
+                                <div class="check-icon"><i class="fa-solid fa-circle-check text-danger"></i></div>
+                            </label>
+                        </div>
+
+                        <div class="payment-option__item p-1">
+                            <input type="radio" class="btn-check" name="payMethod" id="zalopay">
+                            <label
+                                class="card border p-3 rounded-4 w-100 d-flex flex-row align-items-center justify-content-between"
+                                for="zalopay">
+                                <div class="d-flex align-items-center gap-3">
+                                    <img src="/images/zalo-pay.png" width="35">
+                                    <div>
+                                        <span class="fw-bold d-block">Zalo Pay</span>
+                                    </div>
+                                </div>
+                                <div class="check-icon"><i class="fa-solid fa-circle-check text-danger"></i></div>
+                            </label>
+                        </div>
+
+                        <div class="payment-option__item p-1">
+                            <input type="radio" class="btn-check" name="payMethod" id="qr">
+                            <label
+                                class="card border p-3 rounded-4 w-100 d-flex flex-row align-items-center justify-content-between"
+                                for="qr">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-qrcode fs-3 text-danger"></i>
+                                    <span class="fw-bold">Chuyển khoản ngân hàng qua mã QR</span>
+                                </div>
+                                <div class="check-icon"><i class="fa-solid fa-circle-check text-danger"></i></div>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="modal-footer border-0 p-4 pt-0">
+                    <button type="button" class="btn btn-danger w-100 py-3 fw-bold rounded-3"
+                        data-bs-dismiss="modal">XÁC NHẬN</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Payment -->
 
     <script src="/js/bootstrap.bundle.min.js"></script>
     <script src="/js/script.js"></script>

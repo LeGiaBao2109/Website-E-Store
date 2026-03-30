@@ -2504,10 +2504,6 @@ img {
     color: var(--color-primary);
 }
 
-.payment-info__list-item {
-    width: calc(100% - 60px);
-}
-
 .payment-info-item__image-container {
     width: 80px;
     flex-shrink: 0;
@@ -2519,10 +2515,6 @@ img {
     object-fit: contain;
 }
 
-.customer-info__container {
-    width: calc(100% - 40px);
-}
-
 .customer-info__name {
     font-size: 18px;
 }
@@ -2531,10 +2523,6 @@ img {
 .customer-info__email-group input,
 .customer-info__checkbox label {
     font-size: 16px;
-}
-
-.shipping-info__container {
-    width: calc(100% - 40px);
 }
 
 .shipping-info__tab-btn {
@@ -2581,6 +2569,7 @@ img {
 }
 
 @media (max-width: 768px) {
+
     .payment-info__container,
     .shipping-info__container {
         width: 100%;
@@ -2592,7 +2581,8 @@ img {
 
     .customer-info__phone,
     .customer-info__email-group input,
-    .customer-info__checkbox label,.shipping-info__body .form-select,
+    .customer-info__checkbox label,
+    .shipping-info__body .form-select,
     .shipping-info__body .form-control,
     .shipping-info__tab-btn label {
         font-size: 14px;
@@ -2626,3 +2616,95 @@ img {
 }
 
 /* End Payment Info */
+
+/* Payment */
+.payment-summary__container {
+    max-width: 800px;
+    width: 100%;
+}
+
+.payment__voucher-input {
+    font-size: 15px;
+}
+
+.payment__voucher-input::placeholder {
+    color: #adb5bd;
+}
+
+.payment__voucher-input:focus {
+    background-color: transparent;
+}
+
+.payment__voucher-btn {
+    width: 150px;
+    padding: 5px 20px;
+    font-size: 14px;
+}
+
+.payment__total-title,
+.payment__total-amount {
+    font-size: 18px;
+}
+
+.payment__label,
+.payment__value {
+    font-size: 14px;
+}
+
+.payment-method__card {
+    cursor: pointer;
+    max-width: 800px;
+}
+
+.payment-method__icon-box {
+    width: 45px;
+    height: 45px;
+    border-style: dashed;
+}
+
+.payment-method__change {
+    font-size: 16px;
+}
+
+.payment-option__item label {
+    cursor: pointer;
+}
+
+.payment-option__item .check-icon {
+    display: none;
+}
+
+.payment-option__item .btn-check:checked+label {
+    border-color: var(--color-primary);
+    background-color: #fff5f5;
+}
+
+.payment-option__item .btn-check:checked+label .check-icon {
+    display: block;
+}
+
+.payment-method__card:hover {
+    background-color: #fcfcfc;
+}
+
+.payment-method__name {
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    .payment-method__name {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .payment__card {
+        padding: 1.5rem;
+    }
+
+    .payment__total-amount {
+        font-size: 16px;
+    }
+}
+
+/* End Payment */
