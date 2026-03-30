@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Trang Thông Tin Cá Nhân</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+        integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header py-3 sticky-top">
+        <div class="header__container container position-relative">
+            <div class="header__wrap d-flex align-items-center justify-content-between">
+
+                <!-- Logo -->
+                <div class="header__logo flex-shrink-0">
+                    <a href="/" class="text-white fw-bold text-decoration-none fs-4 fs-md-2">
+                        E-STORE
+                    </a>
+                </div>
+
+                <!-- Menu -->
+                <nav class="header__menu d-flex align-items-center ms-2 flex-shrink-0">
+                    <i class="fa-solid fa-bars"></i>
+                    <span class="d-none d-md-block ms-2">DANH MỤC</span>
+                </nav>
+
+                <!-- Sidebar Overlay -->
+                <div class="sidebar-overlay position-fixed"></div>
+
+                <div class="sidebar-form position-fixed w-100">
+                    <!-- Sidebar Popup -->
+                    <div class="sidebar d-flex align-items-start bg-transparent">
+                        <!-- Sidebar List -->
+                        <ul class="sidebar__container list-unstyled m-0 p-0">
+                            <li class="sidebar__item active" data-category="phones">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-mobile-screen-button"></i>
+                                    <span>
+                                        <a href="/products">Điện thoại</a>,
+                                        <a href="/products">Tablet</a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="laptop">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-laptop"></i>
+                                    <span>
+                                        <a href="/products">Laptop</a>,
+                                        <a href="/products">Màn hình</a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="tv">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-tv"></i>
+                                    <span>
+                                        <a href="/products">TV</a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="audio">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-headphones"></i>
+                                    <span>
+                                        <a href="/products">
+                                            Âm Thanh
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="accessory">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-keyboard"></i>
+                                    <span>
+                                        <a href="/products">
+                                            Phụ Kiện
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="discount">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-tag"></i>
+                                    <span>
+                                        <a href="/promotions">
+                                            Khuyến Mãi
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                            <li class="sidebar__item" data-category="news">
+                                <div class="sidebar__item--content">
+                                    <i class="fa-solid fa-newspaper"></i>
+                                    <span>
+                                        <a href="/news">
+                                            Tin Tức
+                                        </a>
+                                    </span>
+                                </div>
+                                <i class="fa-solid fa-chevron-right"></i>
+                            </li>
+                        </ul>
+
+                        <!-- Filter Content -->
+                        <div class="sidebar__content" id="sidebarContent">
+                        </div>
+                    </div>
+                </div>
+                <!-- End Sidebar -->
+
+                <!-- Search -->
+                <form class="header__search d-flex align-items-center flex-grow-1 mx-2 mx-md-4" action="/search"
+                    method="GET">
+                    <input type="text" name="keyword" placeholder="Bạn cần tìm gì nào..."
+                        class="flex-grow-1 border-0 outline-none">
+                    <button type="submit" class="border-0 bg-transparent p-0">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+
+                <!-- Account & Cart -->
+                <div class="header__account d-flex align-items-center gap-2 gap-md-3 flex-shrink-0">
+
+                    <!-- Username -->
+                    <div class="header__account--username d-none d-lg-block text-white">
+                        LE VAN A
+                    </div>
+
+                    <!-- Login -->
+                    <a href="/auth/login"
+                        class="header__account--login d-none align-items-center justify-content-center border-0 flex-shrink-0">
+                        <i class="fa-regular fa-user"></i>
+                        <div>Đăng nhập</div>
+                    </a>
+
+                    <!-- Icon User -->
+                    <a href="/user-profile"
+                        class="header__account--avt active d-flex align-items-center justify-content-center text-decoration-none flex-shrink-0">
+                        <i class="fa-regular fa-user"></i>
+                    </a>
+
+                    <!-- Icon Cart -->
+                    <a href="/cart"
+                        class="header__account--cart d-flex align-items-center justify-content-center text-decoration-none flex-shrink-0 position-relative">
+                        <div
+                            class="header__account--cart-quantity fw-bold d-flex align-items-center justify-content-center position-absolute">
+                            10
+                        </div>
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- User Profile -->
+    <section class="user-dashboard py-5 bg-light">
+        <div class="container">
+            <div class="row g-4">
+                <aside class="col-lg-3">
+                    <div class="card border-0 shadow-sm rounded-4 p-4">
+                        <div class="text-center mb-4">
+                            <div class="avatar-placeholder mx-auto mb-3 rounded-circle bg-secondary-subtle d-flex align-items-center justify-content-center"
+                                style="width: 100px; height: 100px;">
+                                <i class="fa-solid fa-user fs-1 text-secondary"></i>
+                            </div>
+                            <h5 class="fw-bold mb-0">LÊ VĂN A</h5>
+                            <small class="text-muted">034xxxxx84</small>
+                        </div>
+
+                        <ul class="nav flex-column gap-2 profile-menu">
+                            <li class="nav-item">
+                                <a href="/user-profile" class="nav-link rounded-3 p-3">
+                                    <i class="fa-solid fa-house-chimney me-2"></i> Tổng quan
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/info" class="nav-link active rounded-3 p-3">
+                                    <i class="fa-solid fa-user-gear me-2"></i> Thông tin người dùng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/status" class="nav-link rounded-3 p-3">
+                                    <i class="fa-solid fa-truck-fast me-2"></i> Trạng thái đơn hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/order-history" class="nav-link rounded-3 p-3">
+                                    <i class="fa-solid fa-clock-rotate-left me-2"></i> Lịch sử mua hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="/user-profile/vouchers" class="nav-link rounded-3 p-3">
+                                    <i class="fa-solid fa-ticket me-2"></i> Mã giảm giá
+                                </a>
+                            </li>
+                            <li class="nav-item mt-3 border-top pt-3">
+                                <a href="" class="nav-link text-danger fw-bold p-3">
+                                    <i class="fa-solid fa-right-from-bracket me-2"></i> Đăng xuất
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </aside>
+
+                <div class="col-lg-9">
+                    <div class="card border-0 shadow-sm rounded-4 p-4">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h5 class="fw-bold m-0 text-uppercase">Hồ sơ cá nhân</h5>
+                            <span class="badge bg-danger rounded-pill px-3 py-2 fs-6">Hạng: S-SVIP</span>
+                        </div>
+
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-muted">HỌ VÀ TÊN</label>
+                                <div class="form-control bg-light border-0 py-2 fw-medium">Lê Gia Bảo</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-muted">MÃ NGƯỜI DÙNG</label>
+                                <div class="form-control bg-light border-0 py-2 fw-medium text-primary">#U001</div>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-muted">EMAIL</label>
+                                <input type="email" class="form-control border-0 bg-light py-2"
+                                    value="baole.iuh@gmail.com" readonly>
+                            </div>
+                            <div class="col-md-6">
+                                <label class="form-label small fw-bold text-muted">SỐ ĐIỆN THOẠI</label>
+                                <input type="text" class="form-control border-0 bg-light py-2" value="0987654321">
+                            </div>
+
+                            <div class="col-12 mt-4">
+                                <h6 class="fw-bold mb-3 border-bottom pb-2">THỐNG KÊ HỆ THỐNG</h6>
+                                <div class="row g-3">
+                                    <div class="col-md-4">
+                                        <div class="p-3 border border-dashed rounded-4 text-center">
+                                            <small class="d-block text-muted">Điểm tích lũy</small>
+                                            <span class="fw-bold fs-5 text-danger">50,000 points</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="p-3 border border-dashed rounded-4 text-center">
+                                            <small class="d-block text-muted">Tổng chi tiêu</small>
+                                            <span class="fw-bold fs-5 text-dark">150.000.000đ</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="p-3 border border-dashed rounded-4 text-center">
+                                            <small class="d-block text-muted">Ngày gia nhập</small>
+                                            <span class="fw-bold fs-5 text-muted">10/01/2026</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 mt-3">
+                                <p class="small text-muted"><i class="fa-solid fa-circle-info me-1"></i> <strong>Vai
+                                        trò:</strong> System Administrator - Toàn quyền hệ thống</p>
+                            </div>
+
+                            <div class="col-12 mt-2 text-end">
+                                <button class="btn btn-danger px-5 py-2 fw-bold rounded-3">LƯU THAY ĐỔI</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End User Profile -->
+
+    <script src="/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+
+</body>
+
+</html>
