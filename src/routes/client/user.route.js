@@ -10,4 +10,6 @@ router.get("/order-history", userController.orderHistory);
 
 router.get("/status", userController.status);
 
+router.get("/vouchers", userController.vouchers);
+
 module.exports = router;
